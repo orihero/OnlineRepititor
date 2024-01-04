@@ -20,15 +20,15 @@ const Tab = createBottomTabNavigator();
 
 const tabBarData = [
   {
-    label: "Главная",
+    label: "Asosiy",
     icon: HomeIcon,
   },
   {
-    label: "Профиль",
+    label: "Profilim",
     icon: ProfileIcon,
   },
   {
-    label: "Избранное",
+    label: "Saqlanganlar",
     icon: LikedIcon,
   },
   {
@@ -63,8 +63,8 @@ function MyTabBar({ state, descriptors, navigation }: any) {
         alignItems: "center",
         borderTopRightRadius: 40,
         borderTopLeftRadius: 40,
-        paddingBottom: Platform.OS === "ios" ? 12 : 10,
-        paddingTop: 24,
+        paddingBottom: Platform.OS === "ios" ? 12 : 0,
+        paddingTop: 0,
       }}
     >
       {state.routes.map(
@@ -141,7 +141,7 @@ const Tabs = () => {
         <Tab.Screen name={tabBarData[0].label} component={HomeScreen} />
         <Tab.Screen name={tabBarData[1].label} component={ProfileScreen} />
         <Tab.Screen name={tabBarData[2].label} component={LikedScreen} />
-        <Tab.Screen name={tabBarData[3].label} component={BalanceScreen} />
+        {/* <Tab.Screen name={tabBarData[3].label} component={BalanceScreen} /> */}
       </Tab.Navigator>
     </>
   );

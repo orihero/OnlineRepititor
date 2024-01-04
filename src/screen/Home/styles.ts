@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     paddingHorizontal: 22,
-    paddingVertical: 15,
+    paddingVertical: 5,
     backgroundColor: "#fff",
     borderRadius: 10,
   },
@@ -64,7 +64,7 @@ export const styles = StyleSheet.create({
 
   cardImage: {
     height: 150,
-    width: 100,
+    width: 140,
   },
 
   cardText: {
@@ -114,7 +114,7 @@ export const styles = StyleSheet.create({
 
   courseCard: {
     width: 163,
-    height: 200,
+    height: 220,
     borderRadius: 10,
     backgroundColor: "#FFFFFF",
   },
@@ -164,7 +164,6 @@ export const styles = StyleSheet.create({
 
   price: {
     paddingTop: 8,
-    flexDirection: "row",
     alignItems: "center",
     paddingHorizontal: 10,
     gap: 6,

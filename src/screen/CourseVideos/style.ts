@@ -1,14 +1,34 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
+  overlayText: {
+    color: '#29CB73',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  overlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(255,255,255,.9)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+    paddingHorizontal: 20,
+    borderRadius: 10,
+  },
   courseContainer: {
     paddingHorizontal: 20,
   },
 
   header: {
-    marginTop: 36,
-    flexDirection: 'row',
-    alignItems: 'center',
+    // marginTop: 36,
+    // flexDirection: 'row',
+    // alignItems: 'center',
+    marginLeft: 20,
   },
 
   title: {
@@ -16,7 +36,8 @@ export const styles = StyleSheet.create({
     fontWeight: '700',
     lineHeight: 30,
     color: '#343936',
-    paddingLeft: 26,
+    // paddingLeft: 26,
+    marginVertical: 20,
   },
 
   rating: {
@@ -67,18 +88,20 @@ export const styles = StyleSheet.create({
   },
 
   card: {
-    width: '100%',
+    width: '90%',
     marginTop: 8,
-    height: 91,
     borderRadius: 10,
     backgroundColor: '#FFFFFF',
     flexDirection: 'row',
-    alignItems: 'center',
+    alignSelf: 'center',
+    paddingVertical: 8,
   },
 
   coursAbout: {
     paddingHorizontal: 15,
-    paddingVertical: 12,
+    paddingVertical: 15,
+    justifyContent: 'space-between',
+    // backgroundColor: 'red',
   },
 
   titleCard: {
@@ -90,9 +113,6 @@ export const styles = StyleSheet.create({
 
   priceLesson: {
     paddingTop: 32,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
   },
 
   price: {
@@ -123,7 +143,7 @@ export const styles = StyleSheet.create({
   star: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 6,
+    // gap: 6,
   },
 
   oldPrice: {
@@ -148,5 +168,29 @@ export const styles = StyleSheet.create({
     lineHeight: 20,
     textAlign: 'center',
     color: '#29CB73',
+  },
+  button: {
+    marginVertical: 13,
+    height: 51,
+    paddingVertical: 10,
+    borderRadius: 30,
+    backgroundColor: '#29CB73',
+    shadowColor: 'rgba(41, 203, 115, 0.29)',
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowRadius: 17,
+    shadowOpacity: 1,
+    marginHorizontal: 20,
+  },
+
+  buttonText: {
+    fontSize: 18,
+    fontWeight: '500',
+    fontStyle: 'normal',
+    lineHeight: 30,
+    textAlign: 'center',
+    color: '#FFFFFF',
   },
 });

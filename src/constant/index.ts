@@ -1,9 +1,11 @@
 export const COURSES = [
   {
+    id: 1,
     name: 'Tarix',
     cover:
       'https://d19d5sz0wkl0lu.cloudfront.net/dims4/default/b2928d2/2147483647/resize/800x%3E/quality/90/?url=https%3A%2F%2Fatd-brightspot.s3.amazonaws.com%2F7f%2F38%2Fb37d0d6148e48fea8f76209eb3bb%2Fbigstock-pretty-teacher-smiling-at-came-69887626-1.jpg',
     price: '1 990 000 UZS',
+    oldPrice: '2 490 000 UZS',
     courseCount: '464 ta videodars',
     author: 'Abduhakimov Otabek',
     people: '121',
@@ -21,7 +23,9 @@ export const COURSES = [
             attachments: [],
             icon: '',
             duration: '19 min',
-            content:"Bu yerda video haqida qisqacha ma'lumot va dars nimalardan iboratligi yoziladi"
+            content:
+              "Bu yerda video haqida qisqacha ma'lumot va dars nimalardan iboratligi yoziladi",
+            public: true,
           },
           {
             title: 'Tarix fanidan chiqish',
@@ -31,41 +35,51 @@ export const COURSES = [
             attachments: [],
             icon: 'https://static.thenounproject.com/png/3196925-200.png',
             duration: '19 min',
+            public: false,
           },
           {
             title: 'Birinchi oraliq test',
             test: 'https://sheets.googleapis.com/v4/spreadsheets/1oWDlOvFc82J53Z_7CKpJCT7S3WxMfDMgP9KLzqDrmh4/values/1?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
             icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
             duration: '19 min',
+            public: false,
           },
         ],
       },
     ],
   },
   {
+    id: 2,
     name: 'Ona tili',
     cover:
       'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
   },
   {
+    id: 3,
     name: 'Fizika',
   },
   {
+    id: 4,
     name: 'Kimyo',
   },
   {
+    id: 5,
     name: 'Biologiya',
   },
   {
+    id: 6,
     name: 'Geografiya',
   },
   {
+    id: 7,
     name: 'Matematika',
   },
   {
+    id: 8,
     name: 'Ingliz tili',
   },
   {
+    id: 9,
     name: 'Huquq',
   },
 ];
@@ -151,18 +165,18 @@ export const REVIEWS = [
 export const INFORMATION = [
   {
     images: require('../assets/images/inforTech.png'),
-    about: '20.000 преподавателей',
-    dec: 'Подпишитесь и вы будете в курсе все наших акций, скидок, появление Новых предметов, дисциплин и учебных центров.',
+    about: "15+ o'qituvchilar",
+    dec: "Eng kamida 10 yillik tajribaga ega bo'lgan 15 dan ortiq malakali o'qituvchilar",
   },
   {
     images: require('../assets/images/book.png'),
-    about: '2000+ курсов',
-    dec: 'Подпишитесь и вы будете в курсе все наших акций, скидок, появление Новых предметов, дисциплин и учебных центров.',
+    about: '9 ta kurs',
+    dec: "Abituriyentlar uchun kirish imtihonlarini muvaffaqqiyatli topshirish uchun kerak bo'ladigan barcha kurslar to'plami",
   },
   {
     images: require('../assets/images/price.png'),
-    about: 'Средняя цена курса - 10$',
-    dec: 'Подпишитесь и вы будете в курсе все наших акций, скидок, появление Новых предметов, дисциплин и учебных центров.',
+    about: 'Standard narx - 1 990 000 USD',
+    dec: 'Kirish imtihonlarining 2ta asosiy va 3 ta majburiy bloklar barchasining narxi bir xil',
   },
 ];
 

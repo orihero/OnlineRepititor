@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <View style={styles.logo}>
       <LogoIcon />
-      <Text style={styles.logoText}>Online Tutor</Text>
+      <Text style={styles.logoText}>Online Repititor</Text>
     </View>
   );
 };

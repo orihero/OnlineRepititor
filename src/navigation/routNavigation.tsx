@@ -1,25 +1,23 @@
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {ROUTES} from './routes';
-// import Tabs from "./Tab";
 import {NavigationContainer} from '@react-navigation/native';
-import LanguageScreen from '../screen/Language/view';
-import LogInScreen from '../screen/LogIn/view';
-import ForgotPassScreen from '../screen/ForgotPass/view';
-import RegistrationScreen from '../screen/Registration/view';
-import Tabs from './Tab';
-import CategroyScreen from '../screen/Category/views';
-import ChangeProfile from '../screen/ChangeProfile/view';
-import CourseScreen from '../screen/Course/view';
-import FilterScreen from '../screen/Filter/view';
-import NotificationScreen from '../screen/Natification/view';
-import EnglishWithScreen from '../screen/EnglishWith/view';
-import BuyCourseScreen from '../screen/BuyCourse/view';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import AllReviesScreen from '../screen/AllReviews/view';
-import TransactionsScreen from '../screen/Transactions/view';
-import MyReviewsScreen from '../screen/MyReviews/view';
+import BuyCourseScreen from '../screen/BuyCourse/view';
+import CategroyScreen from '../screen/Category/views';
+import CourseScreen from '../screen/Course/view';
 import CourseDetailView from '../screen/CourseDetail/view';
 import CourseVideosView from '../screen/CourseVideos/view';
+import EnglishWithScreen from '../screen/EnglishWith/view';
+import FilterScreen from '../screen/Filter/view';
+import ForgotPassScreen from '../screen/ForgotPass/view';
+import LogInScreen from '../screen/LogIn/view';
+import MyReviewsScreen from '../screen/MyReviews/view';
+import NotificationScreen from '../screen/Natification/view';
 import QuizView from '../screen/Quiz/view';
+import RegistrationScreen from '../screen/Registration/view';
+import TransactionsScreen from '../screen/Transactions/view';
+import VerifyScreen from '../screen/Verify/view';
+import Tabs from './Tab';
+import {ROUTES} from './routes';
 
 export type RootNavigatorParamList = {
   [ROUTES.LANGUAGE.RUS]: undefined;
@@ -34,13 +32,14 @@ export type RootNavigatorParamList = {
   [ROUTES.HOME.FILTER]: undefined;
   [ROUTES.HOME.NOTIFICATION]: undefined;
   [ROUTES.HOME.ENGLISHWITH]: undefined;
-  [ROUTES.HOME.BUYCOURSE]: undefined;
+  [ROUTES.HOME.BUY_COURSE]: undefined;
   [ROUTES.HOME.ALLREVIEWS]: undefined;
   [ROUTES.HOME.COURSE_INFO]: undefined;
   [ROUTES.HOME.COURSE_VIDEOS]: {url: string};
   [ROUTES.HOME.COURSE_TEST]: {test: string};
   [ROUTES.BALANCE.TRANSACTIONS]: undefined;
   [ROUTES.BALANCE.MYREVIEWS]: undefined;
+  [ROUTES.AUTH.VERIFY]: {phone: string};
 };
 
 const Stack = createNativeStackNavigator<RootNavigatorParamList>();
@@ -48,8 +47,10 @@ const Stack = createNativeStackNavigator<RootNavigatorParamList>();
 const RootNavigator = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-        {/* <Stack.Screen name={ROUTES.LANGUAGE.RUS} component={LanguageScreen} /> */}
+      <Stack.Navigator
+        screenOptions={{headerShown: false}}
+        initialRouteName={ROUTES.AUTH.TABS}>
+        <Stack.Screen name={ROUTES.AUTH.VERIFY} component={VerifyScreen} />
         <Stack.Screen name={ROUTES.AUTH.LOGIN} component={LogInScreen} />
         <Stack.Screen
           name={ROUTES.AUTH.FORGOTPASS}
@@ -71,13 +72,14 @@ const RootNavigator = () => {
           name={ROUTES.HOME.ENGLISHWITH}
           component={EnglishWithScreen}
         />
-        <Stack.Screen
-          name={ROUTES.HOME.BUYCOURSE}
-          component={BuyCourseScreen}
-        />
+
         <Stack.Screen
           name={ROUTES.HOME.ALLREVIEWS}
           component={AllReviesScreen}
+        />
+        <Stack.Screen
+          name={ROUTES.HOME.BUY_COURSE}
+          component={BuyCourseScreen}
         />
         <Stack.Screen
           name={ROUTES.HOME.COURSE_INFO}

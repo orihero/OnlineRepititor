@@ -23,7 +23,7 @@ const Header = () => {
       <SafeAreaView>
         <View style={styles.headerContainer}>
           <TouchableOpacity onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-            <BurgerIcon />
+            {/* <BurgerIcon /> */}
           </TouchableOpacity>
           <View>
             <LogoWhiteIcon />

@@ -1,20 +1,31 @@
-import { useNavigation } from "@react-navigation/native";
-import { useState } from "react";
-import { ROUTES } from "../../navigation/routes";
+import {useNavigation} from '@react-navigation/native';
+import {ROUTES} from '../../navigation/routes';
+import {useDispatch, useSelector} from 'react-redux';
+import {selectAppSettings, userLoggedOut} from '../../store/slices/app.slice';
 
-export const ProfileInHooks = () => {
+export const useProfileHook = () => {
   const navigation = useNavigation();
-  const [state, setState] = useState();
+  const dispatch = useDispatch();
 
-
-  const onRegisterHooks = () => {
-    navigation.navigate(ROUTES.AUTH.REGISTER as never)
-  }
+  const onRegisterPress = () => {
+    navigation.navigate(ROUTES.AUTH.LOGIN as never);
+  };
 
   const onChangeProfileHooks = () => {
-    navigation.navigate(ROUTES.PROFILE.CHANGEPROFILE as never)
-  }
+    navigation.navigate(ROUTES.PROFILE.CHANGEPROFILE as never);
+  };
 
+  const {accessToken, user} = useSelector(selectAppSettings);
 
-  return { state, onRegisterHooks, onChangeProfileHooks};
+  const onLogoutPress = () => {
+    dispatch(userLoggedOut());
+  };
+
+  return {
+    onRegisterPress,
+    onChangeProfileHooks,
+    accessToken,
+    user,
+    onLogoutPress,
+  };
 };

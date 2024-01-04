@@ -4,18 +4,17 @@ import {
   TextInput,
   Pressable,
   TouchableOpacity,
-} from "react-native";
-import React from "react";
-import { SafeAreaView } from "react-native";
-import { styles } from "./styles";
-import { FaceIcon, GoogleIcon, LogoIcon } from "../../assets/icons/icon";
-import Logo from "../../components/Logo";
-import { LogInHooks } from "./hooks";
+  ActivityIndicator,
+} from 'react-native';
+import React from 'react';
+import {SafeAreaView} from 'react-native';
+import {styles} from './styles';
+import Logo from '../../components/Logo';
+import {useLoginHook} from './hooks';
 
 const LogInScreen = () => {
-  const { onLogInHooks } = LogInHooks();
-  const { onRegisterHooks } = LogInHooks();
-  const { onTabsHooks } = LogInHooks();
+  const {onLoginPress, onRegisterPress, phone, loading, onPhoneChange} =
+    useLoginHook();
 
   return (
     <SafeAreaView style={styles.container}>
@@ -24,45 +23,35 @@ const LogInScreen = () => {
           <Logo />
         </View>
         <View style={styles.authorization}>
-          <Text style={styles.authorizationText}>Авторизация</Text>
+          <Text style={styles.authorizationText}>Kabinetga kirish</Text>
           <Text style={styles.authorizationDic}>
-            Авторизуйтесь для получения доступа ко всем возможностям системы
+            Tizimning barcha funksiyalarini to'liq ishlatish uchun
+            kabinetingizga kiring
           </Text>
         </View>
         <View style={styles.inputContainer}>
           <TextInput
-            placeholder="Номер телефона или email"
-            placeholderTextColor={"#C9C9C9"}
+            placeholder="Raqam +998  77  666  55  44"
+            placeholderTextColor={'#C9C9C9'}
             style={styles.input}
+            onChangeText={onPhoneChange}
+            value={phone}
           />
-          <TextInput
-            placeholder="Пароль"
-            placeholderTextColor={"#C9C9C9"}
-            style={styles.input}
-            secureTextEntry
-          />
-          <Pressable style={styles.forgotPass} onPress={onLogInHooks}>
-            <Text style={{ color: "#29CB73" }}>Забыли пароль?</Text>
-          </Pressable>
         </View>
         <View>
-          <TouchableOpacity style={styles.button} onPress={onTabsHooks}>
-            <Text style={styles.buttonText}>Войти</Text>
+          <TouchableOpacity
+            style={styles.button}
+            disabled={loading}
+            onPress={onLoginPress}>
+            {loading ? (
+              <ActivityIndicator color={'white'} size="large" />
+            ) : (
+              <Text style={styles.buttonText}>Kirish</Text>
+            )}
           </TouchableOpacity>
-          <Pressable onPress={onRegisterHooks}>
-            <Text style={styles.noAccount}>Нет аккаунта?</Text>
+          <Pressable onPress={onRegisterPress}>
+            <Text style={styles.noAccount}>Ro'yxatdan o'tmadingizmi?</Text>
           </Pressable>
-        </View>
-        <View style={styles.usingApp}>
-          <Text style={{ color: "#C9C9C9" }}>или авторизуйтесь при помощи</Text>
-          <View style={styles.app}>
-            <Pressable>
-              <FaceIcon />
-            </Pressable>
-            <Pressable>
-              <GoogleIcon />
-            </Pressable>
-          </View>
         </View>
       </View>
     </SafeAreaView>

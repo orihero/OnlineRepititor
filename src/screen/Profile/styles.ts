@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
     paddingTop: 7,
     fontSize: 24,
     fontWeight: "700",
-    lineHeight: 16,
+    lineHeight: 30,
     color: "#343936",
   },
 

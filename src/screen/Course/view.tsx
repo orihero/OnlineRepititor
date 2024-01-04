@@ -34,12 +34,12 @@ const CourseScreen = () => {
                 <Text style={styles.title}>{course.name}</Text>
                 <Text style={styles.course}>{course.courseCount}</Text>
               </View>
-              <TouchableOpacity style={styles.rating} onPress={onFilterPress}>
+              {/* <TouchableOpacity style={styles.rating} onPress={onFilterPress}>
                 <RatingIcon />
-              </TouchableOpacity>
+              </TouchableOpacity> */}
             </View>
           </View>
-          <View style={styles.ratingList}>
+          {/* <View style={styles.ratingList}>
             <Text>Сортировка:</Text>
             <Pressable style={styles.arrow}>
               <Text style={styles.arrowText}>По рейтингу</Text>
@@ -49,7 +49,7 @@ const CourseScreen = () => {
               <Text style={styles.arrowText}>По цене</Text>
               <RatingArrowIcon />
             </Pressable>
-          </View>
+          </View> */}
           <View style={styles.cards}>
             {course?.courses?.map((e, index) => {
               return (

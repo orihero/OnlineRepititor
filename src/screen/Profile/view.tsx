@@ -1,180 +1,111 @@
+import LottieView from 'lottie-react-native';
+import React from 'react';
 import {
-  View,
-  Text,
-  ScrollView,
+  Dimensions,
   Image,
+  SafeAreaView,
+  ScrollView,
+  Text,
   TextInput,
   TouchableOpacity,
-  Pressable,
-} from "react-native";
-import React, { useState } from "react";
-import { SafeAreaView } from "react-native";
-import { styles } from "./styles";
-import { CircleIcon, SMSIcon, SelectedIcon } from "../../assets/icons/icon";
-import { ProfileInHooks } from "./hooks";
-import { TouchableHighlight } from "react-native-gesture-handler";
-import TouchableNativeFeedback from "react-native-gesture-handler/lib/typescript/components/touchables/TouchableNativeFeedback.android";
+  View,
+} from 'react-native';
+import {CircleIcon, LogoutIcon} from '../../assets/icons/icon';
+import {useProfileHook} from './hooks';
+import {styles} from './styles';
 
 const ProfileScreen = () => {
-  const [language, setLanguage] = useState<string>("Мужской");
-  const languges: string[] = ["Женкский", "Мужской", "Не указон"];
-  const [mouseOver, setMouseOver] = useState<boolean>(false);
+  const {
+    onChangeProfileHooks,
+    onRegisterPress,
+    accessToken,
+    user,
+    onLogoutPress,
+  } = useProfileHook();
 
-  const { onRegisterHooks } = ProfileInHooks();
-  const { onChangeProfileHooks } = ProfileInHooks();
+  if (!accessToken || !user || Object.keys(user).length <= 0) {
+    return (
+      <View>
+        <LottieView
+          autoPlay
+          source={require('../../assets/lottie/profile.json')}
+          style={{
+            width: Dimensions.get('screen').width,
+            height: Dimensions.get('screen').width,
+          }}
+        />
+        <Text style={{textAlign: 'center'}}>
+          O'z profilingizni ko'rish uchun{' '}
+        </Text>
+        <TouchableOpacity
+          style={[styles.button, {width: '80%', alignSelf: 'center'}]}
+          onPress={onRegisterPress}>
+          <Text style={styles.buttonText}>Ro'yxatdan o'ting</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "#F8F8F8" }}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#F8F8F8'}}>
       <ScrollView>
         <View style={styles.profileContainer}>
-          <Text style={styles.head}>Личные данные</Text>
+          <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+            <Text style={styles.head}>Shaxsiy ma'lumotlar</Text>
+            <TouchableOpacity onPress={onLogoutPress}>
+              <LogoutIcon stroke={'black'} />
+            </TouchableOpacity>
+          </View>
           <View style={styles.profileUpload}>
             <View>
               <Image
-                source={require("../../assets/images/profileUpload.png")}
+                source={require('../../assets/images/profileUpload.png')}
               />
               <View style={styles.circle}>
                 <CircleIcon />
               </View>
             </View>
             <View>
-              <Text style={styles.name}>Рафаэль Ройтман</Text>
-              <View
-                style={{
-                  flexDirection: "row",
-                  alignItems: "center",
-                  gap: 10,
-                  paddingTop: 20,
-                }}
-              >
-                <SMSIcon />
-                <Text style={styles.youReviews}>Мои отзывы</Text>
-              </View>
+              <Text style={styles.name}>{user.name.split(' ').join('\n')}</Text>
             </View>
           </View>
           <View style={styles.inputContainer}>
-            <View>
-              <Text style={{ color: "#C8C8C8", fontWeight: "500" }}>Имя</Text>
-              <TextInput style={styles.input} value="Asliddin" />
+            <View style={{marginTop: 13}}>
+              <Text style={{color: '#C8C8C8', fontWeight: '500'}}>Email</Text>
+              <TextInput style={styles.input} value={user.email} />
             </View>
-            <View style={{ marginTop: 13 }}>
-              <Text style={{ color: "#C8C8C8", fontWeight: "500" }}>
-                Фамилия
-              </Text>
-              <TextInput style={styles.input} value="Abdumalikov" />
-            </View>
-            <View style={{ marginTop: 13 }}>
-              <Text style={{ color: "#C8C8C8", fontWeight: "500" }}>
-                Отчество
-              </Text>
-              <TextInput style={styles.input} value="Abdurasulvich" />
-            </View>
-            <View style={{ marginTop: 13 }}>
-              <Text style={{ color: "#C8C8C8", fontWeight: "500" }}>Email</Text>
-              <TextInput
-                style={styles.input}
-                value="asliddinabdumalikov8002@gmail.com"
-              />
-            </View>
-            <View style={{ marginTop: 13 }}>
-              <Text style={{ color: "#C8C8C8", fontWeight: "500" }}>Пол</Text>
-              <Pressable
-                onPress={() => {
-                  setMouseOver(!mouseOver);
-                }}
-              >
-                <View style={styles.input}>
-                  <Text style={{ paddingVertical: 12 }}>{language}</Text>
-                </View>
 
-                <View style={styles.select}>
-                  <TouchableOpacity
-                    // style={styles.select}
-                    onPress={() => {
-                      setMouseOver(!mouseOver);
-                    }}
-                    style={
-                      !mouseOver
-                        ? {
-                            transform: [{ rotate: "-180deg" }],
-                          }
-                        : {}
-                    }
-                  >
-                    <SelectedIcon />
-                  </TouchableOpacity>
-                </View>
-                <View style={styles.cards}>
-                  {languges.map((e: string) => {
-                    return (
-                      <TouchableOpacity
-                        key={e}
-                        onPress={() => {
-                          setLanguage(e);
-                        }}
-                        style={!mouseOver ? styles.card : styles.cardLang}
-                      >
-                        <Text>{e}</Text>
-                      </TouchableOpacity>
-                    );
-                  })}
-                </View>
-              </Pressable>
-            </View>
-            <View style={{ marginTop: 13 }}>
-              <Text style={{ color: "#C8C8C8", fontWeight: "500" }}>
-                Дата рождения
+            <View style={{marginTop: 13}}>
+              <Text style={{color: '#C8C8C8', fontWeight: '500'}}>
+                Tug'ilgan sana
               </Text>
-              <TextInput style={styles.input} value="11.03.2008" />
-              {/* <DatePicker
-        style={{width: 200}}
-        date={this.state.date}
-        mode="date"
-        placeholder="select date"
-        format="YYYY-MM-DD"
-        minDate="2016-05-01"
-        maxDate="2016-06-01"
-        confirmBtnText="Confirm"
-        cancelBtnText="Cancel"
-        customStyles={{
-          dateIcon: {
-            position: 'absolute',
-            left: 0,
-            top: 4,
-            marginLeft: 0
-          },
-          dateInput: {
-            marginLeft: 36
-          }
-          // ... You can check the source to find the other keys.
-        }}
-        onDateChange={(date) => {this.setState({date: date})}}
-      /> */}
+              <TextInput style={styles.input} value={user.dateOfBirth} />
             </View>
-            <View style={{ marginTop: 13 }}>
-              <Text style={{ color: "#C8C8C8", fontWeight: "500" }}>
-                Номер телефона
+            <View style={{marginTop: 13}}>
+              <Text style={{color: '#C8C8C8', fontWeight: '500'}}>
+                Telefon raqami
               </Text>
-              <TextInput style={styles.input} value="+998 33 926 07 77" />
+              <TextInput style={styles.input} value={user.phone} />
             </View>
-            <View style={{ marginTop: 13 }}>
-              <Text style={{ color: "#C8C8C8", fontWeight: "500" }}>
-                Регион
+            <View style={{marginTop: 13}}>
+              <Text style={{color: '#C8C8C8', fontWeight: '500'}}>
+                Ota onasining telefon raqami
               </Text>
-              <TextInput style={styles.input} value="Ташкент" />
+              <TextInput style={styles.input} value={user.parentNumber} />
+            </View>
+            <View style={{marginTop: 13}}>
+              <Text style={{color: '#C8C8C8', fontWeight: '500'}}>Viloyat</Text>
+              <TextInput style={styles.input} value={user.region} />
+            </View>
+            <View style={{marginTop: 13}}>
+              <Text style={{color: '#C8C8C8', fontWeight: '500'}}>Tuman</Text>
+              <TextInput style={styles.input} value={user.district} />
             </View>
           </View>
           <TouchableOpacity
-            style={styles.buttonChange}
-            onPress={onRegisterHooks}
-          >
-            <Text style={styles.buttonTextChange}>Изменить пароль</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
             style={styles.button}
-            onPress={onChangeProfileHooks}
-          >
-            <Text style={styles.buttonText}>Изменить</Text>
+            onPress={onChangeProfileHooks}>
+            <Text style={styles.buttonText}>O'zgartirish</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
