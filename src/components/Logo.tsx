@@ -24,6 +24,6 @@ const styles = StyleSheet.create({
   logoText: {
     fontSize: 28,
     fontWeight: "700",
-    color: "#29CB73",
+    color: "#0600ac",
   },
 });

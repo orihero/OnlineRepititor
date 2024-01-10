@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
     width: 54,
     height: 54,
     borderRadius: 10,
-    backgroundColor: "#29CB73",
+    backgroundColor: "#0600ac",
     paddingHorizontal: 15,
     paddingVertical: 17,
   },
@@ -104,7 +104,7 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "700",
     lineHeight: 16,
-    color: "#29CB73",
+    color: "#0600ac",
   },
 
   coursPeople: {
@@ -146,6 +146,6 @@ export const styles = StyleSheet.create({
     fontStyle: "normal",
     lineHeight: 20,
     textAlign: "center",
-    color: "#29CB73",
+    color: "#0600ac",
   },
 });

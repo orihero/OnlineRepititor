@@ -56,7 +56,7 @@ const BuyCourseScreen = () => {
                   style={[
                     styles.card,
                     isActive && {
-                      backgroundColor: '#29CB73',
+                      backgroundColor: '#0600ac',
                     },
                   ]}>
                   <Image

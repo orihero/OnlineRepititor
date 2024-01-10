@@ -35,6 +35,11 @@ export const useCourseVideoHook = () => {
   if (!!user?.purchasedCourses) {
     shouldBuy = !user.purchasedCourses?.includes(courseId);
   }
+
+  const onRegisterPress = () => {
+    navigation.navigate(ROUTES.AUTH.LOGIN);
+  };
+
   const shouldRegister = !accessToken;
   return {
     goBack,
@@ -45,5 +50,6 @@ export const useCourseVideoHook = () => {
     shouldBuy,
     shouldRegister,
     onBuyPress,
+    onRegisterPress
   };
 };

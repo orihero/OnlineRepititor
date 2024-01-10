@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
     fontWeight: "700",
     lineHeight: 20,
     textAlign: "center",
-    color: "#29CB73",
+    color: "#0600ac",
   },
 
   cards: {
@@ -90,7 +90,7 @@ export const styles = StyleSheet.create({
     marginTop: 39,
     height: 51,
     borderRadius: 30,
-    backgroundColor: "#29CB73",
+    backgroundColor: "#0600ac",
     paddingVertical: 10,
   },
 

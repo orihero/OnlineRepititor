@@ -114,7 +114,7 @@ function MyTabBar({ state, descriptors, navigation }: any) {
             >
               <NavigationIcon label={label} isFocused={isFocused} />
               <Text
-                style={isFocused ? { color: "#29CB73" } : { color: "#B5B5B5" }}
+                style={isFocused ? { color: "#0600ac" } : { color: "#B5B5B5" }}
               >
                 {label}
               </Text>

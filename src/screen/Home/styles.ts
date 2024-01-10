@@ -77,7 +77,7 @@ export const styles = StyleSheet.create({
     right: 0,
     lineHeight: 20,
     textAlign: "center",
-    color: "#29CB73",
+    color: "#0600ac",
   },
 
   topCourse: {
@@ -150,7 +150,7 @@ export const styles = StyleSheet.create({
     fontSize: 12,
     lineHeight: 20,
     textAlign: "center",
-    color: "#29CB73",
+    color: "#0600ac",
   },
 
   title: {
@@ -172,7 +172,7 @@ export const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: "700",
     lineHeight: 16,
-    color: "#29CB73",
+    color: "#0600ac",
   },
 
   oldPrice: {
@@ -283,7 +283,7 @@ export const styles = StyleSheet.create({
     height: 62,
     paddingVertical: 15,
     borderRadius: 30,
-    backgroundColor: "#29CB73",
+    backgroundColor: "#0600ac",
     shadowColor: "rgba(41, 203, 115, 0.29)",
     shadowOffset: {
       width: 0,

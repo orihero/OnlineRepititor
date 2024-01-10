@@ -88,6 +88,6 @@ export const styles = StyleSheet.create({
     fontWeight: "700",
     fontStyle: "normal",
     lineHeight: 16,
-    color: "#29CB73",
+    color: "#0600ac",
   },
 });

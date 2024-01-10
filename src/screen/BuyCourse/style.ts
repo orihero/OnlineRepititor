@@ -73,7 +73,7 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '700',
     lineHeight: 16,
-    color: '#29CB73',
+    color: '#0600ac',
   },
 
   coursPeople: {
@@ -115,7 +115,7 @@ export const styles = StyleSheet.create({
     fontStyle: 'normal',
     lineHeight: 20,
     textAlign: 'center',
-    color: '#29CB73',
+    color: '#0600ac',
   },
   infoCard: {
     margin: 20,
@@ -132,7 +132,7 @@ export const styles = StyleSheet.create({
     height: 51,
     paddingVertical: 10,
     borderRadius: 30,
-    backgroundColor: '#29CB73',
+    backgroundColor: '#0600ac',
     shadowColor: 'rgba(41, 203, 115, 0.29)',
     shadowOffset: {
       width: 0,

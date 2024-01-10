@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Dimensions,
   Image,
   Pressable,
   SafeAreaView,
@@ -17,6 +18,7 @@ import {
 import {CourseHooks} from './hooks';
 import {styles} from './styles';
 import {useGoBackHook} from '../../common/hooks';
+import Video from 'react-native-video-controls';
 
 const CourseScreen = () => {
   const {onFilterPress, course, onCoursePress} = CourseHooks();
@@ -50,6 +52,18 @@ const CourseScreen = () => {
               <RatingArrowIcon />
             </Pressable>
           </View> */}
+          {course.videoUrl && (
+            <Video
+              style={{
+                width: Dimensions.get('window').width,
+                height: 300,
+                marginLeft: -20,
+              }}
+              source={{uri: course.videoUrl}}
+              showOnStart={false}
+              disableBack
+            />
+          )}
           <View style={styles.cards}>
             {course?.courses?.map((e, index) => {
               return (

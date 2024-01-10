@@ -8,7 +8,7 @@ export const COURSES = [
     oldPrice: '2 490 000 UZS',
     courseCount: '464 ta videodars',
     author: 'Abduhakimov Otabek',
-    people: '121',
+    people: '2',
     courses: [
       {
         name: '6-sinf umumiy tarix',
@@ -19,68 +19,1267 @@ export const COURSES = [
             title: 'Tarix faniga kirish',
             test: null,
             videoUrl:
-              'http://185.196.213.144:7400/video/tarix/video-1702643452388',
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/1-Dars Tarix Kirish-3333.m4v',
             attachments: [],
             icon: '',
-            duration: '19 min',
+            duration: '18 min',
             content:
               "Bu yerda video haqida qisqacha ma'lumot va dars nimalardan iboratligi yoziladi",
             public: true,
           },
           {
-            title: 'Tarix fanidan chiqish',
+            title: 'Dars',
             test: null,
             videoUrl:
-              'http://185.196.213.144:7400/video/tarix/video-1702643452388',
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/02-Tarix-1.m4v',
             attachments: [],
             icon: 'https://static.thenounproject.com/png/3196925-200.png',
             duration: '19 min',
             public: false,
           },
           {
-            title: 'Birinchi oraliq test',
-            test: 'https://sheets.googleapis.com/v4/spreadsheets/1oWDlOvFc82J53Z_7CKpJCT7S3WxMfDMgP9KLzqDrmh4/values/1?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
-            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/03-Tarix-2.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
             duration: '19 min',
             public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/04-Tarix-3.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/05-Tarix-4.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/06-Tarix-5.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/07-Tarix-6.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/08-Tarix-7.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/09-Tarix-8.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/10-Tarix-10.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/11-11.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/12-12.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/13-13.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/14-14.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/15-15.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/16-16.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/17-17.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/18-18.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/19-19.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/20-20.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/21-21.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/22-22.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/23-23.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/24-24.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/25-25.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/26-26.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/27-27.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/28-28.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/29-29.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/30-30.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/31-31.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/32-32.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/33-33.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/34-34.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/35-35.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/36-36.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/37-37.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/38-38.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/39-39.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: 'Dars',
+            test: null,
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/40-40.m4v',
+            attachments: [],
+            icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          // {
+          //   title: 'Birinchi oraliq test',
+          //   test: 'https://sheets.googleapis.com/v4/spreadsheets/1oWDlOvFc82J53Z_7CKpJCT7S3WxMfDMgP9KLzqDrmh4/values/1?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+          //   icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+          //   duration: '19 min',
+          //   public: false,
+          // },
+        ],
+      },
+    ],
+    videoUrl:
+      'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/1-Dars%20Tarix%20Kirish-3333.m4v',
+  },
+  {
+    id: 3,
+    name: 'Fizika',
+    author: 'Temirov Shohbozbek',
+    cover:
+      'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
+    courses: [
+      {
+        name: 'Mehanika',
+        cover: 'https://cdn-icons-png.flaticon.com/512/4650/4650640.png',
+        content: [
+          {
+            title: 'Fizik kattaliklar',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2001-1.m4v',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Fizik kattaliklarning birliklari',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2002-2.m4v',
+            duration: '15 min',
+            public: true,
+          },
+          {
+            title: 'Tekislikda ikki nuqta orasidagi masofa',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2003-3.m4v',
+            duration: '12 min',
+            public: true,
+          },
+          {
+            title: 'Trigonometriya elementlari',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2004-4.m4v',
+            duration: '10 min',
+            public: true,
+          },
+          {
+            title: "To'g'ri chiziqli tekis harakat",
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2005-5.m4v',
+            duration: '21 min',
+            public: true,
+          },
+          {
+            title: "To'g'ri chiziqli tekis harakat grafigi",
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2006-6.m4v',
+            duration: '18 min',
+            public: true,
+          },
+          {
+            title: 'Harakat nisbiyligi',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2007-7.m4v',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Tezliklarni qo’shish',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2008-8.m4v',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'O’rtacha va oniy tezlik',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2009-9.m4v',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'To’g’ri chiziqli teks o’zgaruvchan harakat',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2010-10.m4v',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'To’g’ri chiziqli teks o’zgaruvchan harakatning tenglamasi',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2011-11.m4v',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'To’g’ri chiziqli teks o’zgaruvchan harakat grafiklari',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2012-12.m4v',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Jismlarning erkin tushishi',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2013-13.m4v',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Egri chiziqli harakat. Aylana bo’ylab teks harakat',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2014-14.m4v',
+            duration: '24 min',
+            public: true,
+          },
+          // {
+          //   title: 'Gorizontal otilgan jism harakati',
+          //   videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Fizika/F1-1.m4v',
+          //   duration: '16 min',
+          //   public: true,
+          // },
+          // {
+          //   title: 'Gorizontga qiya otilgan jism harakati',
+          //   videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Fizika/F2-2.m4v',
+          //   duration: '17 min',
+          //   public: true,
+          // },
+          // {
+          //   title: 'Dinamika, Nyuton qonunlari',
+          //   videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Fizika/F3-3.m4v',
+          //   duration: '33 min',
+          //   public: true,
+          // },
+        ],
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: 'Ingliz tili',
+    cover:
+      'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
+    courses: [
+      {
+        name: 'Elementary',
+        cover:
+          'https://static10.tgstat.ru/channels/_0/86/86afa1ef2103f5188e75ee266e474f6d.jpg',
+        content: [
+          {
+            title: 'To be going/about to',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i1.mp4',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i2.mp4',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i3.mp4',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i4.mp4',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i5.mp4',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i6.mp4',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i7.mp4',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i8.mp4',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i9.mp4',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i10.mp4',
+            duration: '8 min',
+            public: true,
+          },
+        ],
+      },
+    ],
+    author: "Toshpo'latov Javlon",
+  },
+  {
+    id: 5,
+    name: 'Biologiya',
+    author: 'Maxmatqulov Zuxrobbek',
+    cover:
+      'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
+    courses: [
+      {
+        name: '8-sinf biologiya',
+        cover:
+          'https://lh3.googleusercontent.com/proxy/u93YuN9V76Esz8WPL-Ldixpi8Ws8mYwYCL31rdYzvNmGXr5yHROfag_FjU1kDeaXSGTy5e5O6j97nUcrsDbYCrLCT4SWYEPsr64pIhkZ-AA8rUkDBrjyknpJaZPM7mNPmbz1s7VJvShAlRHM-v7prNufbdaC2ch-TA',
+        content: [
+          {
+            title: 'Qon aylanish sistemasi',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B1-1.m4v',
+            duration: '34 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B2-3.m4v',
+            duration: '34 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B3-4.m4v',
+            duration: '34 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B4-5.m4v',
+            duration: '34 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B5-6.m4v',
+            duration: '34 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B6-7.m4v',
+            duration: '34 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B7-8.m4v',
+            duration: '34 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B8-9.m4v',
+            duration: '34 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B9-10.m4v',
+            duration: '34 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B10-2.m4v',
+            duration: '34 min',
+            public: true,
           },
         ],
       },
     ],
   },
   {
-    id: 2,
-    name: 'Ona tili',
+    id: 6,
+    name: 'Geografiya',
+    author: 'Nazarov Mirhumoyun',
+    videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G1-1.m4v',
     cover:
       'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
+    courses: [
+      {
+        name: "Birinchi bo'lim",
+        cover: 'https://idum.uz/wp-content/uploads/2021/10/geografiya_600.jpg',
+        content: [
+          {
+            title: 'Geografiyaga kirish',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G1-1.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G2-12.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G3-13.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G4-17.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G5-18.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G6-19.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G7-20.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G8-21.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G9-22.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G10-2.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G11-3.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G12-4.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G13-5.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G14-6.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G15-7.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G16-8.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G17-9.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G18-10.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G19-11.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G20-13.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G21-14.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G22-15.m4v',
+            duration: '3 min',
+            public: true,
+          },
+        ],
+      },
+    ],
   },
   {
-    id: 3,
-    name: 'Fizika',
+    id: 7,
+    name: 'Matematika',
+    author: 'Eldor Hamroyev',
+    videoUrl:
+      'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/1-Dars%20Matematika-2.m4v',
+    cover:
+      'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
+    courses: [
+      {
+        name: 'Algebra',
+        cover:
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv6Ur8ppQTxRJ6NNo44VLXINhc4jrAUOwiw&usqp=CAU',
+        content: [
+          {
+            title: 'Natural va butun sonlar',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/1-Dars%20Matematika-2.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/2-Dars%20Matematika-13.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/1-Dars%20Matematika-2.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/3-Dars%20Matematika-17.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/4-Dars%20Matematika-18.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/5-Dars%20Matematika-19.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/6-Dars%20Matematika-20.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/7-Dars%20Matematika-21.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/8-Dars%20Matematika-22.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/09-1.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/10-3.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/11-4.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/12-5.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/13-6.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/14-7.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/15-8.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/16-9.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/17-10.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/18-11.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/19-12.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/20-14.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/21-15.m4v',
+            duration: '3 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/22-16.m4v',
+            duration: '3 min',
+            public: true,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 9,
+    name: 'Huquq',
+    author: 'Eshquvvatov Bekzod',
+    cover:
+      'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
+    videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H1-1.m4v',
+    courses: [
+      {
+        name: "8-sinf O'zbekiston davlati va huquqi asoslari",
+        cover:
+          'https://media.utube.uz/thumbs/9ca815aa277acf29e880797aaf645e39-big.jpg',
+        content: [
+          {
+            title: "O'zbekiston Respublikasi mustaqil davlat",
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H1-1.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H2-12.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H3-14.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H5-16.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H6-17.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H7-18.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H8-19.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H9-20.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H10-2.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H11-3.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H12-4.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H13-5.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H14-6.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H15-7.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H16-8.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H17-9.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H18-10.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H19-11.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H20-4.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H21-5.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H22-6.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H23-7.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H24-8.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H25-9.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H26-10.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H27-11.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H28-12.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H29-13.m4v',
+            duration: '8 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H30-14.m4v',
+            duration: '8 min',
+            public: true,
+          },
+        ],
+      },
+    ],
   },
   {
     id: 4,
     name: 'Kimyo',
   },
   {
-    id: 5,
-    name: 'Biologiya',
-  },
-  {
-    id: 6,
-    name: 'Geografiya',
-  },
-  {
-    id: 7,
-    name: 'Matematika',
-  },
-  {
-    id: 8,
-    name: 'Ingliz tili',
-  },
-  {
-    id: 9,
-    name: 'Huquq',
+    id: 2,
+    name: 'Ona tili',
   },
 ];
 

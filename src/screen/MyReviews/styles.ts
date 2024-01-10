@@ -60,7 +60,7 @@ export const styles = StyleSheet.create({
     fontSize: 12,
     lineHeight: 20,
     textAlign: "center",
-    color: "#29CB73",
+    color: "#0600ac",
   },
 
   desc: {

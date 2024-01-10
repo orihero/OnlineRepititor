@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   overlayText: {
-    color: '#29CB73',
+    color: '#0600ac',
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'center',
@@ -44,7 +44,7 @@ export const styles = StyleSheet.create({
     width: 54,
     height: 54,
     borderRadius: 10,
-    backgroundColor: '#29CB73',
+    backgroundColor: '#0600ac',
     paddingHorizontal: 15,
     paddingVertical: 17,
   },
@@ -94,7 +94,9 @@ export const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     flexDirection: 'row',
     alignSelf: 'center',
-    paddingVertical: 8,
+    // paddingVertical: 8,
+    alignItems: 'center',
+    paddingLeft: 10,
   },
 
   coursAbout: {
@@ -125,7 +127,7 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '700',
     lineHeight: 16,
-    color: '#29CB73',
+    color: '#0600ac',
   },
 
   coursPeople: {
@@ -167,14 +169,14 @@ export const styles = StyleSheet.create({
     fontStyle: 'normal',
     lineHeight: 20,
     textAlign: 'center',
-    color: '#29CB73',
+    color: '#0600ac',
   },
   button: {
     marginVertical: 13,
     height: 51,
     paddingVertical: 10,
     borderRadius: 30,
-    backgroundColor: '#29CB73',
+    backgroundColor: '#0600ac',
     shadowColor: 'rgba(41, 203, 115, 0.29)',
     shadowOffset: {
       width: 0,

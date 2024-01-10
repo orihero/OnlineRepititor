@@ -47,7 +47,7 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 20,
     textAlign: "center",
-    color: "#29CB73",
+    color: "#0600ac",
   },
 
   includes: {
@@ -136,7 +136,7 @@ export const styles = StyleSheet.create({
     width: 123,
     height: 37,
     borderRadius: 30,
-    backgroundColor: "#29CB73",
+    backgroundColor: "#0600ac",
   },
 
   buttonText: {
@@ -160,7 +160,7 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "700",
     lineHeight: 16,
-    color: "#29CB73",
+    color: "#0600ac",
     paddingTop: 5
   },
 });

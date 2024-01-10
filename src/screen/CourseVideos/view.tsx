@@ -13,6 +13,7 @@ const CourseVideosView = () => {
     shouldBuy,
     shouldRegister,
     onBuyPress,
+    onRegisterPress,
   } = useCourseVideoHook();
 
   return (
@@ -30,7 +31,7 @@ const CourseVideosView = () => {
               <TouchableOpacity
                 onPress={onCoursePress(e)}
                 key={index}
-                disabled={!e.public && (shouldBuy || shouldRegister)}
+                // disabled={!e.public && (shouldBuy || shouldRegister)}
                 style={styles.card}>
                 <Image
                   source={{
@@ -38,23 +39,27 @@ const CourseVideosView = () => {
                       e.icon ||
                       'https://static.thenounproject.com/png/3196925-200.png',
                   }}
-                  style={{width: 93, height: 91, borderRadius: 10}}
+                  style={{width: 30, height: 30, borderRadius: 10}}
                 />
                 <View style={styles.coursAbout}>
-                  <Text style={styles.titleCard}>{e.title}</Text>
+                  <Text style={styles.titleCard}>
+                    {index + 1}. {e.title}
+                  </Text>
                   <View style={styles.star}>
                     <ClockIcon />
                     <Text style={styles.startText}>{e.duration}</Text>
                   </View>
                 </View>
-                {!e.public && (shouldBuy || shouldRegister) ? (
-                  <View style={styles.overlay}>
+                {/* {!e.public && (shouldBuy || shouldRegister) ? (
+                  <TouchableOpacity
+                    style={styles.overlay}
+                    onPress={shouldBuy ? onBuyPress : onRegisterPress}>
                     <Text style={styles.overlayText}>
                       Iltimos bu videodarsliklardan foydalanish uchun{' '}
                       {shouldBuy ? 'kursni sotib oling' : "ro'yxatdan o'ting"}
                     </Text>
-                  </View>
-                ) : null}
+                  </TouchableOpacity>
+                ) : null} */}
               </TouchableOpacity>
             );
           })}
