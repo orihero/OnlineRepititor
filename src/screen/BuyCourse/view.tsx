@@ -1,19 +1,17 @@
 import React from 'react';
 import {
-  Dimensions,
   Image,
   Linking,
   ScrollView,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from 'react-native';
 // import Video from 'react-native-video';
-import Video from 'react-native-video-controls';
-import {ArrowIcon} from '../../assets/icons/icon';
-import {COURSES} from '../../constant';
-import {useBuyCourseHook} from './hooks';
-import {styles} from './style';
+import { ArrowIcon } from '../../assets/icons/icon';
+import { COURSES } from '../../constant';
+import { useBuyCourseHook } from './hooks';
+import { styles } from './style';
 
 const service_id = '31135';
 const merchant_id = '23305';

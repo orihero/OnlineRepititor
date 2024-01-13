@@ -57,7 +57,7 @@ const QuizView = () => {
           />
           <Text style={{textAlign: 'center', fontSize: 20}}>
             Siz testni muvaffaqqiyatli topshirdingiz! Sizning korsatgichingiz:{' '}
-            {score}%
+            {Math.round(score)}%
           </Text>
         </View>
       ) : (

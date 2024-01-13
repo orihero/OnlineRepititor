@@ -16,19 +16,19 @@ export const COURSES = [
           'https://barakot.uz/image/get-image?imageName=Tarix%20qadimgi%20dunyo%206.jpg',
         content: [
           {
-            title: 'Tarix faniga kirish',
+            title: 'Qadimgi tarix – taraqqiyotning boshlanishi',
             test: null,
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/1-Dars Tarix Kirish-3333.m4v',
             attachments: [],
             icon: '',
-            duration: '18 min',
+            duration: '8 min',
             content:
               "Bu yerda video haqida qisqacha ma'lumot va dars nimalardan iboratligi yoziladi",
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Eng qadimgi odamlarning rivojlanish bosqichlari',
             test: null,
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/02-Tarix-1.m4v',
@@ -38,7 +38,7 @@ export const COURSES = [
             public: false,
           },
           {
-            title: 'Dars',
+            title: 'Urug‘chilik jamiyati',
             test: null,
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/03-Tarix-2.m4v',
@@ -48,7 +48,7 @@ export const COURSES = [
             public: false,
           },
           {
-            title: 'Dars',
+            title: 'Eneolit va bronza davri',
             test: null,
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/04-Tarix-3.m4v',
@@ -58,12 +58,19 @@ export const COURSES = [
             public: false,
           },
           {
-            title: 'Dars',
+            title: 'Temir davriga o‘tishda O‘rta Osiyoning rivojlanishi',
             test: null,
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/05-Tarix-4.m4v',
             attachments: [],
             icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: '1-5 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1oWDlOvFc82J53Z_7CKpJCT7S3WxMfDMgP9KLzqDrmh4/values/1?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
             duration: '19 min',
             public: false,
           },
@@ -118,6 +125,13 @@ export const COURSES = [
             public: false,
           },
           {
+            title: '6-10 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1oWDlOvFc82J53Z_7CKpJCT7S3WxMfDMgP9KLzqDrmh4/values/2?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
             title: 'Dars',
             test: null,
             videoUrl:
@@ -168,6 +182,13 @@ export const COURSES = [
             public: false,
           },
           {
+            title: '11-15 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1oWDlOvFc82J53Z_7CKpJCT7S3WxMfDMgP9KLzqDrmh4/values/3?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
             title: 'Dars',
             test: null,
             videoUrl:
@@ -214,6 +235,13 @@ export const COURSES = [
               'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/20-20.m4v',
             attachments: [],
             icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: '16-20 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1oWDlOvFc82J53Z_7CKpJCT7S3WxMfDMgP9KLzqDrmh4/values/4?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
             duration: '19 min',
             public: false,
           },
@@ -417,14 +445,56 @@ export const COURSES = [
             duration: '19 min',
             public: false,
           },
-          // {
-          //   title: 'Birinchi oraliq test',
-          //   test: 'https://sheets.googleapis.com/v4/spreadsheets/1oWDlOvFc82J53Z_7CKpJCT7S3WxMfDMgP9KLzqDrmh4/values/1?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
-          //   icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
-          //   duration: '19 min',
-          //   public: false,
-          // },
         ],
+      },
+      {
+        name: "7-sinf O'zbekiston tarixi",
+        cover:
+          'https://barakot.uz/image/get-image?imageName=O%27ZBEKISTON%20TARIXI%207-sinf.jpg',
+      },
+      {
+        name: '7-sinf Jahon tarixi',
+        cover: 'https://telegra.ph/file/e5ae0a2310cdc0eff5c15.png',
+      },
+      {
+        name: "8-sinf O'zbekiston tarixi",
+        cover:
+          'https://barakot.uz/image/get-image?imageName=O%27ZBEKISTON%20TARIXI%208-sinf%20A6.jpg',
+      },
+      {
+        name: '8-sinf Jahon tarixi',
+        cover:
+          'https://barakot.uz/image/get-image?imageName=Jahon%20tarixi%208%20sinf%20A6.jpg',
+      },
+      {
+        name: "9-sinf O'zbekiston tarixi",
+        cover:
+          'https://barakot.uz/image/get-image?imageName=O%27zbekiston%20tarixi%209-sinf.jpg',
+      },
+      {
+        name: '9-sinf Jahon tarixi',
+        cover:
+          'https://barakot.uz/image/get-image?imageName=JAHON%20TARIXI%209-sinf.jpg',
+      },
+      {
+        name: "10-sinf O'zbekiston tarixi",
+        cover:
+          'https://play-lh.googleusercontent.com/C01m2EnYKPHhhOBAtZ3Y0hEhS2H-mLVGWXE21PRlP6lTOWW0DcMLd1b6E1mo6e7YjLE',
+      },
+      {
+        name: '10-sinf Jahon tarixi',
+        cover:
+          'https://play-lh.googleusercontent.com/jo8AEGSJjpff9s3cGM-DqPNlIMqkZ3c2_NVNybjyTLPb8hz9_FOM1Pp-FXut9gPKQ90',
+      },
+      {
+        name: "11-sinf O'zbekiston tarixi",
+        cover:
+          'https://barakot.uz/image/get-image?imageName=O%27BERISTON%20TARIXI%2011-sinf.jpg',
+      },
+      {
+        name: '11-sinf Jahon tarixi',
+        cover:
+          'https://play-lh.googleusercontent.com/UL4akzEH-YyARqEzhFRjqh5JSd4wwXfog2yhvWmB0mNZHWdRpQiWGDS3-gCjP4JKBY6u',
       },
     ],
     videoUrl:
@@ -742,8 +812,9 @@ export const COURSES = [
       'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
     courses: [
       {
-        name: "Birinchi bo'lim",
-        cover: 'https://idum.uz/wp-content/uploads/2021/10/geografiya_600.jpg',
+        name: '5-sinf Geografiya',
+        cover:
+          'https://barakot.uz/image/get-image?imageName=Geografiya%205%20(%D0%906,%20yumshoq).jpg',
         content: [
           {
             title: 'Geografiyaga kirish',
@@ -753,153 +824,177 @@ export const COURSES = [
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Geografik kashfiyotlar va hozirgi zamon geografiyasi',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G2-12.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Quyosh oy va yulduzlar',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G3-13.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: "Yerning shakli va o'lchamlari",
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G4-17.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: "Yerning o'z o'qi va quyosh atrofida aylanishi",
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G5-18.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: "Azimut va masofani o'lchash",
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G6-19.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Joy balandligi',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G7-20.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Masshtab',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G8-21.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Geografik xaritalar',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G9-22.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Geografik koordinatalar',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G10-2.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Yerning ichki tuzilishi',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G11-3.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: "Litosfera tog' jinslari",
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G12-4.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Yer postining harakatlari',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G13-5.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Yer yuzasi relyefining asosiy shakllari',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G14-6.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Gidrosferaning tarkibi. Dunyo okeani',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G15-7.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Daryolar',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G16-8.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: "Ko'l va muzliklar. Yer osti suvlari",
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G17-9.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Atmosferaning tuzilishi',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G18-10.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Havo harorati va bosimi',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G19-11.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Shamol',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G20-13.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: "Havoning namligi va yog'inlar",
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G21-14.m4v',
             duration: '3 min',
             public: true,
           },
           {
-            title: 'Dars',
+            title: 'Ob-havo va iqlim',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G22-15.m4v',
             duration: '3 min',
             public: true,
           },
         ],
+      },
+      {
+        name: '6-sinf Geografiya',
+        cover:
+          'https://barakot.uz/image/get-image?imageName=Geografiya%206-sinf.jpg',
+      },
+      {
+        name: '7-sinf Geografiya',
+        cover: 'https://geografiya.uz/uploads/1430660864_7-sinf.jpg',
+      },
+      {
+        name: '8-sinf Geografiya',
+        cover:
+          'https://play-lh.googleusercontent.com/X8hG7BTS4jlRf3Wh5_Ku_N9GePcfBYBM5N5ku_0ALzdFlMp74g0QMDKbxF165xNCW0gV',
+      },
+      {
+        name: '9-sinf Geografiya',
+        cover:
+          'https://play-lh.googleusercontent.com/4gydapsM8sFtXbfQ4G3uOFyHzM-CkfHSt5phBSVbKEj_av39Nzpxt9ITi5UOEn9A0Tc',
+      },
+      {
+        name: '10-sinf Geografiya',
+        cover:
+          'https://play-lh.googleusercontent.com/A8xYl_SW6FeS8YFhPy9hhrGMaUan0GdIFUtKC3VuAjeBRllDaFL7FZyeJ4N6oMg9hQ',
       },
     ],
   },

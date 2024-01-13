@@ -25,7 +25,7 @@ const CourseScreen = () => {
   const goBack = useGoBackHook();
   return (
     <SafeAreaView style={{flex: 1}}>
-      <ScrollView>
+      <ScrollView contentContainerStyle={{paddingBottom: 30}}>
         <View style={styles.courseContainer}>
           <View style={styles.header}>
             <TouchableOpacity onPress={goBack}>
@@ -62,6 +62,7 @@ const CourseScreen = () => {
               source={{uri: course.videoUrl}}
               showOnStart={false}
               disableBack
+              disableSeekbar
             />
           )}
           <View style={styles.cards}>

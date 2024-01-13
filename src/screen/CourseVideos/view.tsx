@@ -15,7 +15,7 @@ const CourseVideosView = () => {
     onBuyPress,
     onRegisterPress,
   } = useCourseVideoHook();
-
+  let index = 0;
   return (
     <View style={{paddingTop: 40, flex: 1}}>
       <View style={styles.header}>
@@ -26,11 +26,11 @@ const CourseVideosView = () => {
       </View>
       <View style={{flex: 1}}>
         <ScrollView>
-          {videos.map((e, index) => {
+          {videos.map((e, i) => {
             return (
               <TouchableOpacity
                 onPress={onCoursePress(e)}
-                key={index}
+                key={i}
                 // disabled={!e.public && (shouldBuy || shouldRegister)}
                 style={styles.card}>
                 <Image
@@ -43,7 +43,7 @@ const CourseVideosView = () => {
                 />
                 <View style={styles.coursAbout}>
                   <Text style={styles.titleCard}>
-                    {index + 1}. {e.title}
+                    {!!e.test ? '' : `${++index}.`} {e.title}
                   </Text>
                   <View style={styles.star}>
                     <ClockIcon />
