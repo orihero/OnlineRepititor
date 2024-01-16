@@ -296,6 +296,13 @@ export const COURSES = [
             public: false,
           },
           {
+            title: '21-25 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1oWDlOvFc82J53Z_7CKpJCT7S3WxMfDMgP9KLzqDrmh4/values/5?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
             title: 'Dars',
             test: null,
             videoUrl:
@@ -342,6 +349,13 @@ export const COURSES = [
               'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/30-30.m4v',
             attachments: [],
             icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: '26-30 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1oWDlOvFc82J53Z_7CKpJCT7S3WxMfDMgP9KLzqDrmh4/values/5?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
             duration: '19 min',
             public: false,
           },
@@ -396,6 +410,13 @@ export const COURSES = [
             public: false,
           },
           {
+            title: '31-35 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1oWDlOvFc82J53Z_7CKpJCT7S3WxMfDMgP9KLzqDrmh4/values/7?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
             title: 'Dars',
             test: null,
             videoUrl:
@@ -442,6 +463,13 @@ export const COURSES = [
               'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/40-40.m4v',
             attachments: [],
             icon: 'https://static.thenounproject.com/png/3196925-200.png',
+            duration: '19 min',
+            public: false,
+          },
+          {
+            title: '36-40 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1oWDlOvFc82J53Z_7CKpJCT7S3WxMfDMgP9KLzqDrmh4/values/8?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
             duration: '19 min',
             public: false,
           },
