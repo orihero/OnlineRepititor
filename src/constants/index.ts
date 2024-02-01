@@ -2,8 +2,7 @@ export const COURSES = [
   {
     id: 1,
     name: 'Tarix',
-    cover:
-      'https://d19d5sz0wkl0lu.cloudfront.net/dims4/default/b2928d2/2147483647/resize/800x%3E/quality/90/?url=https%3A%2F%2Fatd-brightspot.s3.amazonaws.com%2F7f%2F38%2Fb37d0d6148e48fea8f76209eb3bb%2Fbigstock-pretty-teacher-smiling-at-came-69887626-1.jpg',
+    cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/Tarix.jpg',
     price: '1 990 000 UZS',
     oldPrice: '2 490 000 UZS',
     courseCount: '464 ta videodars',
@@ -532,11 +531,10 @@ export const COURSES = [
     id: 3,
     name: 'Fizika',
     author: 'Temirov Shohbozbek',
-    cover:
-      'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
+    cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/fizika.png',
     courses: [
       {
-        name: 'Mehanika',
+        name: 'Kirish',
         cover: 'https://cdn-icons-png.flaticon.com/512/4650/4650640.png',
         content: [
           {
@@ -657,18 +655,35 @@ export const COURSES = [
           // },
         ],
       },
+      {
+        name: 'Termodinamika',
+        cover: 'https://cdn-icons-png.flaticon.com/512/6813/6813621.png',
+      },
+      {
+        name: 'Elektrodinamika',
+        cover:
+          'https://st4.depositphotos.com/4177785/30973/v/450/depositphotos_309731958-stock-illustration-electromagnetism-color-icon-electromagnetic-force.jpg',
+      },
+      {
+        name: 'To‘lqin optikasi',
+        cover: 'https://cdn-icons-png.flaticon.com/512/342/342359.png',
+      },
+      {
+        name: 'Maxsus nisbiylik nazariyasi ',
+        cover:
+          'https://albertobuscato.com/wp-content/uploads/2021/01/Cabecera-EMC-e1611584694648.png',
+      },
     ],
   },
   {
     id: 8,
     name: 'Ingliz tili',
-    cover:
-      'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
+    cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/Ingliz+tili.jpg',
     courses: [
       {
-        name: 'Elementary',
+        name: 'Pronouns',
         cover:
-          'https://static10.tgstat.ru/channels/_0/86/86afa1ef2103f5188e75ee266e474f6d.jpg',
+          'https://assets.ltkcontent.com/images/83171/pronouns_27c5571306.jpg',
         content: [
           {
             title: 'To be going/about to',
@@ -742,6 +757,51 @@ export const COURSES = [
           },
         ],
       },
+      {
+        name: 'Tenses',
+        cover:
+          'https://www.thoughtco.com/thmb/N07EPW4L-8PyLkxlRyLF2L8JFnw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Getty_tense-155096784-56af9f573df78cf772c6c6dd.jpg',
+      },
+      {
+        name: 'Reported speech',
+        cover:
+          'https://englex.ru/app/uploads/talking-about-reported-speech.png',
+      },
+      {
+        name: 'Conjunctions',
+        cover:
+          'https://assets.ltkcontent.com/images/13119/fanboys_27c5571306.jpg',
+      },
+      {
+        name: 'Modal verbs',
+        cover:
+          'https://contenthub-static.grammarly.com/blog/wp-content/uploads/2019/05/modal-verbs.jpeg',
+      },
+      {
+        name: 'Nonfinite forms of verb',
+        cover:
+          'https://cdn.abicart.com/shop/1507/art7/h6427/180846427-origpic-2e1163.jpg',
+      },
+      {
+        name: 'Adjectives and adverbs',
+        cover:
+          'https://contenthub-static.grammarly.com/blog/wp-content/uploads/2017/03/BMD-3403.png',
+      },
+      {
+        name: 'Word order in English',
+        cover:
+          'https://cdn.textstudio.com/output/sample/normal/6/4/5/5/order-logo-73-5546.png',
+      },
+      {
+        name: 'Prepositions',
+        cover:
+          'https://english.olympiadsuccess.com/assets/images/english_square/E05PRE01.jpg',
+      },
+      {
+        name: 'Article',
+        cover:
+          'https://englishonlinetests.com/wp-content/uploads/2021/02/EnglishArticles-870x400.png',
+      },
     ],
     author: "Toshpo'latov Javlon",
   },
@@ -749,13 +809,12 @@ export const COURSES = [
     id: 5,
     name: 'Biologiya',
     author: 'Maxmatqulov Zuxrobbek',
-    cover:
-      'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
+    cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/Biologiya.jpg',
     courses: [
       {
-        name: '8-sinf biologiya',
+        name: '5-sinf biologiya',
         cover:
-          'https://lh3.googleusercontent.com/proxy/u93YuN9V76Esz8WPL-Ldixpi8Ws8mYwYCL31rdYzvNmGXr5yHROfag_FjU1kDeaXSGTy5e5O6j97nUcrsDbYCrLCT4SWYEPsr64pIhkZ-AA8rUkDBrjyknpJaZPM7mNPmbz1s7VJvShAlRHM-v7prNufbdaC2ch-TA',
+          'https://lh3.googleusercontent.com/proxy/eZYw9XQMv7e1ueI2tf_4YoUQ3GqiNGlCik9DvRrWfb0zXBE0z2GYGwFli_DTcgPJ6jVZyOnfSYlSEc_8Z0VXNPGGIFLqi6hfmYRplu9WhetyoO42RuMFjg-0',
         content: [
           {
             title: 'Qon aylanish sistemasi',
@@ -829,6 +888,36 @@ export const COURSES = [
           },
         ],
       },
+      {
+        name: '6-sinf biologiya',
+        cover:
+          'https://lh3.googleusercontent.com/proxy/ZmWYB0EO_8N10LFPcNa807zTTcIDhdWDBv5dXgP-Yb5ooRCb91wTjiCBOy5BmnmndQGpLPDjWUyA0QFC16631epNZbt-15v8Yi_FAW_7HDBSPL5-Ln5-cqA8',
+      },
+      {
+        name: '7-sinf biologiya',
+        cover:
+          'https://lh3.googleusercontent.com/proxy/VS7Luf8rfkmXNrA1ID9HmqPeWMuCV56LMoWpXQYETJVJpudqECjqbi-j3UZcunyVohSgXJBDSs1LS__bkJGL8f8-SsSNtb47LgflnsV20IouJ8qG0pxQ-Jy1HLbAK3lJzT4',
+      },
+      {
+        name: '8-sinf biologiya',
+        cover:
+          'https://lh3.googleusercontent.com/proxy/u93YuN9V76Esz8WPL-Ldixpi8Ws8mYwYCL31rdYzvNmGXr5yHROfag_FjU1kDeaXSGTy5e5O6j97nUcrsDbYCrLCT4SWYEPsr64pIhkZ-AA8rUkDBrjyknpJaZPM7mNPmbz1s7VJvShAlRHM-v7prNufbdaC2ch-TA',
+      },
+      {
+        name: '9-sinf biologiya',
+        cover:
+          'https://play-lh.googleusercontent.com/LCD7vdfViim5fvWno4wfkgYPUnmd8wNSolX49C0M5rCow9zsjWZMBpf33vvDcRwd23gT',
+      },
+      {
+        name: '10-sinf biologiya',
+        cover:
+          'https://play-lh.googleusercontent.com/E4fg1Ts7mmO1EJwPMvx83a7eKdFDqEgYwzTSlMKQAbRhqj1kd-cA_53oB6RohL6R3td7',
+      },
+      {
+        name: '11-sinf biologiya',
+        cover:
+          'https://play-lh.googleusercontent.com/_oICNH4tD3SW1xyTdo-vaOE_NMdeDxv0MjLY6c_L_NQHxeDe3jQEnRUr7w1U5s-Ncck',
+      },
     ],
   },
   {
@@ -836,8 +925,7 @@ export const COURSES = [
     name: 'Geografiya',
     author: 'Nazarov Mirhumoyun',
     videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G1-1.m4v',
-    cover:
-      'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
+    cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/Geografiya+1.jpg',
     courses: [
       {
         name: '5-sinf Geografiya',
@@ -852,11 +940,25 @@ export const COURSES = [
             public: true,
           },
           {
+            title: '1-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 1?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
+          },
+          {
             title: 'Geografik kashfiyotlar va hozirgi zamon geografiyasi',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G2-12.m4v',
             duration: '3 min',
             public: true,
+          },
+          {
+            title: '2-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 2?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Quyosh oy va yulduzlar',
@@ -866,11 +968,25 @@ export const COURSES = [
             public: true,
           },
           {
+            title: '3-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 3?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
+          },
+          {
             title: "Yerning shakli va o'lchamlari",
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G4-17.m4v',
             duration: '3 min',
             public: true,
+          },
+          {
+            title: '4-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 4?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: "Yerning o'z o'qi va quyosh atrofida aylanishi",
@@ -880,11 +996,25 @@ export const COURSES = [
             public: true,
           },
           {
+            title: '5-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 5?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
+          },
+          {
             title: "Azimut va masofani o'lchash",
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G6-19.m4v',
             duration: '3 min',
             public: true,
+          },
+          {
+            title: '6-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 6?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Joy balandligi',
@@ -894,11 +1024,25 @@ export const COURSES = [
             public: true,
           },
           {
+            title: '7-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 7?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
+          },
+          {
             title: 'Masshtab',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G8-21.m4v',
             duration: '3 min',
             public: true,
+          },
+          {
+            title: '8-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 8?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Geografik xaritalar',
@@ -908,11 +1052,25 @@ export const COURSES = [
             public: true,
           },
           {
+            title: '9-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 9?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
+          },
+          {
             title: 'Geografik koordinatalar',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G10-2.m4v',
             duration: '3 min',
             public: true,
+          },
+          {
+            title: '10-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 10?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Yerning ichki tuzilishi',
@@ -922,11 +1080,25 @@ export const COURSES = [
             public: true,
           },
           {
+            title: '11-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 11?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
+          },
+          {
             title: "Litosfera tog' jinslari",
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G12-4.m4v',
             duration: '3 min',
             public: true,
+          },
+          {
+            title: '12-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 12?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Yer postining harakatlari',
@@ -936,11 +1108,25 @@ export const COURSES = [
             public: true,
           },
           {
+            title: '13-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 13?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
+          },
+          {
             title: 'Yer yuzasi relyefining asosiy shakllari',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G14-6.m4v',
             duration: '3 min',
             public: true,
+          },
+          {
+            title: '14-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 14?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Gidrosferaning tarkibi. Dunyo okeani',
@@ -950,11 +1136,25 @@ export const COURSES = [
             public: true,
           },
           {
+            title: '15-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 15?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
+          },
+          {
             title: 'Daryolar',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G16-8.m4v',
             duration: '3 min',
             public: true,
+          },
+          {
+            title: '16-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 16?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: "Ko'l va muzliklar. Yer osti suvlari",
@@ -964,11 +1164,25 @@ export const COURSES = [
             public: true,
           },
           {
+            title: '17-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 17?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
+          },
+          {
             title: 'Atmosferaning tuzilishi',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G18-10.m4v',
             duration: '3 min',
             public: true,
+          },
+          {
+            title: '18-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 18?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Havo harorati va bosimi',
@@ -978,6 +1192,13 @@ export const COURSES = [
             public: true,
           },
           {
+            title: '19-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 19?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
+          },
+          {
             title: 'Shamol',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G20-13.m4v',
@@ -985,11 +1206,25 @@ export const COURSES = [
             public: true,
           },
           {
+            title: '20-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 20?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
+          },
+          {
             title: "Havoning namligi va yog'inlar",
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G21-14.m4v',
             duration: '3 min',
             public: true,
+          },
+          {
+            title: '21-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/117W61NsJe8C85QM21Gft2Jw-PxVzfwxLxnBH_7mZao8/values/Mavzu 21?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Ob-havo va iqlim',
@@ -1032,13 +1267,12 @@ export const COURSES = [
     author: 'Eldor Hamroyev',
     videoUrl:
       'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/1-Dars%20Matematika-2.m4v',
-    cover:
-      'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
+    cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/matematika.png',
     courses: [
       {
-        name: 'Algebra',
+        name: '5-sinf matematika',
         cover:
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv6Ur8ppQTxRJ6NNo44VLXINhc4jrAUOwiw&usqp=CAU',
+          'https://barakot.uz/image/get-image?imageName=Matematika%205-sinf%201-qism.%20%D0%905%20yumshoq%20(lotin).jpg',
         content: [
           {
             title: 'Natural va butun sonlar',
@@ -1203,14 +1437,42 @@ export const COURSES = [
           },
         ],
       },
+      {
+        name: '6-sinf matematika',
+        cover:
+          'https://barakot.uz/image/get-image?imageName=MATEMATIKA%206-sinf.jpg',
+      },
+      {
+        name: '7-sinf matematika',
+        cover:
+          'https://uzgdz.com/wp-content/themes/uzgdz.com/static/cover2.jpg',
+      },
+      {
+        name: '8-sinf matematika',
+        cover:
+          'https://play-lh.googleusercontent.com/uIHJ_ELx8PjLO--6fm2Wz3jytEcY-qKkOdtwV0Vl7We27EERicLxtiDMl-h9vzwm7JI',
+      },
+      {
+        name: '9-sinf matematika',
+        cover:
+          'https://lh3.googleusercontent.com/proxy/VwntmjA5WJYrMsYUIUd4Z4p-WbH9t716fHw6FXPqCAlEHUrJMHr9O4AE1tzYdYroUPnhVEokGPLQcn2NrhFlqcpmUNXw03WXx4pGcbnrkhomIWY',
+      },
+      {
+        name: '10-sinf matematika',
+        cover: 'https://answers.uz/uploads/books/answers_uz61270algebra-10.png',
+      },
+      {
+        name: '11-sinf matematika',
+        cover:
+          'https://play-lh.googleusercontent.com/daQUhD-b21w__WZB3K-IcH7HGE5HlKa6cvWCAW3mfixclqwCd4sxPmEefn3ZifysNLM=w240-h480-rw',
+      },
     ],
   },
   {
     id: 9,
     name: 'Huquq',
     author: 'Eshquvvatov Bekzod',
-    cover:
-      'https://vietnamteachingjobs.com/wp-content/uploads/2023/07/why-do-you-want-to-be-a-teacher-1.jpg',
+    cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/huquq+2.jpg',
     videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H1-1.m4v',
     courses: [
       {
@@ -1394,15 +1656,240 @@ export const COURSES = [
           },
         ],
       },
+      {
+        name: '9-sinf Huquq',
+        cover:
+          'https://play-lh.googleusercontent.com/2OpoYy4MYjpg4xbk6eS50_EAqAvndVEjSHrxGA_Rz04PGppyi1WmnaM0S-jZEvNEyw',
+      },
+      {
+        name: '10-sinf Geografiya',
+        cover:
+          'https://play-lh.googleusercontent.com/o5IlTykDpOctF2ceDZbY5Jdj_SFDCURTVRq4CJ3rKGJDJRHdGE965Tdqb7ikSfgqcN8',
+      },
+      {
+        name: '11-sinf Geografiya',
+        cover:
+          'https://play-lh.googleusercontent.com/plYtsoj8ghvtD2F1Q_ralPxvVD1ftodAxA5clvU4_pe_OU3a8jBAGwBhSiQaG24J0eU',
+      },
     ],
   },
   {
     id: 4,
     name: 'Kimyo',
+    author: 'Diyorbek Boymurodov',
+    cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/Kimyo.jpg',
+    courses: [
+      {
+        name: '7-sinf Kimyo',
+        cover: 'https://barakot.uz/image/get-image?imageName=Kimyo%207.jpg',
+        content: [
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Kimyo/1k.mp4',
+            duration: '16 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Kimyo/k2.mp4',
+            duration: '16 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Kimyo/k3.mp4',
+            duration: '16 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Kimyo/k4.mp4',
+            duration: '16 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Kimyo/k5.mp4',
+            duration: '16 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Kimyo/k6.mp4',
+            duration: '16 min',
+            public: true,
+          },
+        ],
+      },
+      {
+        name: '8-sinf Kimyo',
+        cover:
+          'https://play-lh.googleusercontent.com/DkJady6kzUKYckkZ_2mPcL2Z8JrPkCvO2rTv9zU3uZTtV_f-eCYoQcwedPqgwb8QjFRF',
+      },
+      {
+        name: '9-sinf Kimyo',
+        cover:
+          'https://play-lh.googleusercontent.com/blfvSg_yvm1gaYmb9eqdHO8DPmuEsKkHiD5m_lx3pGKrYn7zgoxR7yxeiWwhJ9Hhj5Y',
+      },
+      {
+        name: '10-sinf Kimyo',
+        cover:
+          'https://lh3.googleusercontent.com/proxy/znjxR3h9zPLGazeAYW6pLlWAxaeoNedn0SEvywPLmDw__K5-rHpRWfYqffVREs7Xh4cViJslDufToDwW2rOHrceQmFD88hJ8_C2iUbw',
+      },
+      {
+        name: '11-sinf Kimyo',
+        cover:
+          'https://play-lh.googleusercontent.com/R2I2O1Iv6wZVH_A-HEaLb9NNh5sphibq8jrqDd37MONwZm8ZChqFtGmok5M5XdieCTqN',
+      },
+    ],
   },
   {
     id: 2,
     name: 'Ona tili',
+    author: 'Muratova Zilola',
+    courses: [
+      {
+        name: '5-sinf Ona tili',
+        cover:
+          'https://barakot.uz/image/get-image?imageName=ONA%20TILI%205-sinf.jpg',
+        content: [
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o1.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o2.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o3.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o4.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o5.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o6.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o7.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o8.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o9.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o10.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o11.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o12.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o13.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o14.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o15.mp4',
+            duration: '24 min',
+            public: true,
+          },
+          {
+            title: 'Dars',
+            videoUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o16.mp4',
+            duration: '24 min',
+            public: true,
+          },
+        ],
+      },
+      {
+        name: '6-sinf Ona tili',
+        cover:
+          'https://barakot.uz/image/get-image?imageName=Ona%20tili%206-sinf.jpg',
+      },
+      {
+        name: '7-sinf Ona tili',
+        cover:
+          'https://barakot.uz/image/get-image?imageName=ONA%20TILI%207-sinf%20A6.jpg',
+      },
+      {
+        name: '8-sinf Ona tili',
+        cover:
+          'https://play-lh.googleusercontent.com/5aCXGz8LS80-JmYwh8Y4Bd4MHVeQMUBO22rDpgttlp7g55QsYtL0kQxQz4MUFrDswoY',
+      },
+      {
+        name: '9-sinf Ona tili',
+        cover:
+          'https://play-lh.googleusercontent.com/GfAKrwEq0BC6Dt7Dvc1M955y00lMhaumwLMRxMxsdLLlUiLO4ZREHtHLyfa-PhJ9bGM',
+      },
+      {
+        name: '10-sinf Ona tili',
+        cover:
+          'https://play-lh.googleusercontent.com/iYZgZTlPiSVX_MTh4EaB5IPVJ4reEL7TOVf02MA3STob2Dbu6kyNn5ZYeX6UcEVHuShT',
+      },
+      {
+        name: '11-sinf Ona tili',
+        cover:
+          'https://play-lh.googleusercontent.com/N5mU3avnwlguMTdfG__-uiWHr2AMh20VhcrbTEyjtbSBL4QB6AlGmcrMaEOrUpQqQTmX',
+      },
+    ],
+    cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/Onatili.jpg',
   },
 ];
 

@@ -30,7 +30,7 @@ const RegistrationScreen = () => {
             <View>
               <Text>Ism</Text>
               <TextInput
-                placeholderTextColor="#C8C8C8"
+                placeholderTextColor="gray"
                 placeholder="Eshmat"
                 style={styles.input}
                 {...getInputProps('name')}
@@ -39,7 +39,7 @@ const RegistrationScreen = () => {
             <View style={{marginTop: 13}}>
               <Text>Familiya</Text>
               <TextInput
-                placeholderTextColor="#C8C8C8"
+                placeholderTextColor="gray"
                 placeholder="Toshmatov"
                 style={styles.input}
                 {...getInputProps('surname')}
@@ -48,7 +48,7 @@ const RegistrationScreen = () => {
             <View style={{marginTop: 13}}>
               <Text>Telefon raqam</Text>
               <TextInput
-                placeholderTextColor={'#C8C8C8'}
+                placeholderTextColor="gray"
                 placeholder="+998776665544"
                 style={styles.input}
                 {...getInputProps('phone')}
@@ -57,7 +57,7 @@ const RegistrationScreen = () => {
             <View style={{marginTop: 13}}>
               <Text>Ota onangiz telefon raqami</Text>
               <TextInput
-                placeholderTextColor={'#C8C8C8'}
+                placeholderTextColor="gray"
                 placeholder="+998776665544"
                 style={styles.input}
                 {...getInputProps('parentNumber')}
@@ -66,7 +66,7 @@ const RegistrationScreen = () => {
             <View style={{marginTop: 13}}>
               <Text>Tug'ilgan yilingiz</Text>
               <TextInput
-                placeholderTextColor={'#C8C8C8'}
+                placeholderTextColor="gray"
                 placeholder="01.01.1980"
                 style={styles.input}
                 {...getInputProps('dateOfBirth')}
@@ -75,7 +75,7 @@ const RegistrationScreen = () => {
             <View style={{marginTop: 13}}>
               <Text>Email</Text>
               <TextInput
-                placeholderTextColor={'#C8C8C8'}
+                placeholderTextColor="gray"
                 placeholder="example@gmail.com"
                 style={styles.input}
                 {...getInputProps('email')}
@@ -84,7 +84,7 @@ const RegistrationScreen = () => {
             <View style={{marginTop: 13}}>
               <Text>Viloyat</Text>
               <TextInput
-                placeholderTextColor={'#C8C8C8'}
+                placeholderTextColor="gray"
                 placeholder="Toshkent"
                 style={styles.input}
                 {...getInputProps('region')}
@@ -93,7 +93,7 @@ const RegistrationScreen = () => {
             <View style={{marginTop: 13}}>
               <Text>Tuman</Text>
               <TextInput
-                placeholderTextColor={'#C8C8C8'}
+                placeholderTextColor="gray"
                 placeholder="Yakkasaroy"
                 {...getInputProps('district')}
                 style={styles.input}

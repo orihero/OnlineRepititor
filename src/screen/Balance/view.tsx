@@ -9,7 +9,7 @@ import {
 import React, { useState } from "react";
 import { styles } from "./styles";
 import { BalanceCostIcon } from "../../assets/icons/icon";
-import { REPLENISHMENT_MTHODS } from "../../constant";
+import { REPLENISHMENT_MTHODS } from "../../constants";
 import BalanceHooks from './hooks'
 
 const BalanceScreen = () => {

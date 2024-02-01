@@ -18,6 +18,7 @@ import TransactionsScreen from '../screen/Transactions/view';
 import VerifyScreen from '../screen/Verify/view';
 import Tabs from './Tab';
 import {ROUTES} from './routes';
+import IIVScreen from '../screen/IIV/view';
 
 export type RootNavigatorParamList = {
   [ROUTES.LANGUAGE.RUS]: undefined;
@@ -40,6 +41,7 @@ export type RootNavigatorParamList = {
   [ROUTES.BALANCE.TRANSACTIONS]: undefined;
   [ROUTES.BALANCE.MYREVIEWS]: undefined;
   [ROUTES.AUTH.VERIFY]: {phone: string};
+  [ROUTES.HOME.IIV]: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootNavigatorParamList>();
@@ -77,6 +79,7 @@ const RootNavigator = () => {
           name={ROUTES.HOME.ALLREVIEWS}
           component={AllReviesScreen}
         />
+        <Stack.Screen name={ROUTES.HOME.IIV} component={IIVScreen} />
         <Stack.Screen
           name={ROUTES.HOME.BUY_COURSE}
           component={BuyCourseScreen}

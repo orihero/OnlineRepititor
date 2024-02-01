@@ -11,7 +11,7 @@ import {
   userLoggedIn,
 } from '../../store/slices/app.slice';
 import {REQUESTS} from '../../api/requests';
-import {COURSES} from '../../constant';
+import {COURSES} from '../../constants';
 
 export const HomeHooks = () => {
   const navigation = useNavigation();
@@ -78,6 +78,10 @@ export const HomeHooks = () => {
       )
     : COURSES;
 
+  const onIIVPress = () => {
+    navigation.navigate(ROUTES.HOME.IIV);
+  };
+
   return {
     state,
     onCategoryPress,
@@ -89,5 +93,6 @@ export const HomeHooks = () => {
     courses,
     search,
     onSearchChange: (e: string) => setSearch(e),
+    onIIVPress,
   };
 };

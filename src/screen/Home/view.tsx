@@ -1,3 +1,4 @@
+import LottieView from 'lottie-react-native';
 import React from 'react';
 import {
   Dimensions,
@@ -10,163 +11,101 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {PopIcon, SearchIcon, StarIcon} from '../../assets/icons/icon';
-import {COURSES, INFORMATION, TOP_COURSES} from '../../constant';
-import {styles} from './styles';
-import Review from '../../components/review';
+import {SearchIcon} from '../../assets/icons/icon';
+import {COURSES, INFORMATION} from '../../constants';
 import {HomeHooks} from './hooks';
-import LottieView from 'lottie-react-native';
+import {styles} from './styles';
 
 const HomeScreen = () => {
-  const {
-    onCoursePress,
-    onApply,
-    onValueChange,
-    state,
-    onFavoritePress,
-    favorites,
-    courses,
-    search,
-    onSearchChange,
-  } = HomeHooks();
+  const {onApply, onValueChange, state, onCoursePress, onIIVPress} =
+    HomeHooks();
 
   return (
     <SafeAreaView>
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.homeContainer}>
-          <View>
-            <Text style={styles.headText}>Qidirish</Text>
-            <View style={styles.search}>
-              <TextInput
-                placeholder="Kurs nomi"
-                style={{width: 200, fontSize: 15}}
-                value={search}
-                onChangeText={onSearchChange}
-              />
-              <Pressable>
-                <SearchIcon />
-              </Pressable>
-            </View>
-          </View>
           <View style={styles.category}>
             <View style={styles.categoryHead}>
               <Text style={styles.categoryText}>Kurslar</Text>
-              {/* <TouchableOpacity onPress={onCategoryPress}> */}
-              {/* <Text style={styles.allCategory}>Barchasini ko'rish</Text> */}
-              {/* </TouchableOpacity> */}
             </View>
-            <ScrollView
-              horizontal={true}
-              showsHorizontalScrollIndicator={false}
-              style={{borderRadius: 10, marginTop: 13}}>
-              <View style={styles.cards}>
-                {courses.map((e, index) => {
-                  let isFavorite = !!favorites[e.id];
-                  return (
-                    <>
-                      <TouchableOpacity
-                        key={index}
-                        style={styles.courseCard}
-                        disabled={!e.courses}
-                        onPress={() => onCoursePress(e)}>
-                        <Image
-                          source={{
-                            uri:
-                              e.cover ||
-                              'https://images.squarespace-cdn.com/content/v1/629acd14894a462d58ab1243/5a229a42-4031-43d8-8aba-b12e39c11982/AdobeStock_139559217.jpeg',
-                          }}
-                          style={{
-                            width: 163,
-                            height: 120,
-                            borderTopLeftRadius: 10,
-                            borderTopRightRadius: 10,
-                          }}
-                        />
-                        <View style={styles.popular}>
-                          <View style={styles.popIcon}>
-                            <PopIcon />
-                            <Text style={styles.popText}>{e.people}</Text>
-                          </View>
-                          <TouchableOpacity
-                            onPress={() => onFavoritePress(e.id)}>
-                            <View style={styles.star}>
-                              <StarIcon filled={isFavorite} />
-                            </View>
-                          </TouchableOpacity>
-                        </View>
-                        <Text style={styles.title}>{e.name}</Text>
-                        {!!e.author && (
-                          <Text
-                            style={[styles.priceText, {textAlign: 'center'}]}>
-                            O'qituvchi: {e.author}
-                          </Text>
-                        )}
-
-                        {/* <View style={styles.price}>
-                          <Text style={styles.priceText}>{e.price}</Text>
-                          <Text style={styles.oldPrice}>{e.oldPrice}</Text>
-                        </View> */}
-                      </TouchableOpacity>
-                    </>
-                  );
-                  return (
-                    <TouchableOpacity
-                      key={index}
-                      style={styles.card}
-                      onPress={() => onCoursePress(e)}>
-                      <Image
-                        source={{uri: e.cover}}
-                        style={styles.cardImage}
-                        resizeMode="cover"
-                      />
-                      <View>
-                        <Text style={styles.cardText}>{e.name}</Text>
-                        <Text style={styles.priceText}>{e.price}</Text>
-                      </View>
-                    </TouchableOpacity>
-                  );
-                })}
+          </View>
+          {COURSES.map((e, i) => {
+            return (
+              <TouchableOpacity key={e.name} onPress={() => onCoursePress(e)}>
+                <View style={styles.crsCrd}>
+                  <View>
+                    <Text style={styles.crdTitle}>{e.name}</Text>
+                    <Text>{e.author}</Text>
+                  </View>
+                  <Image
+                    style={{width: 80, height: 80, borderRadius: 80}}
+                    source={{uri: e.cover}}
+                  />
+                </View>
+              </TouchableOpacity>
+            );
+          })}
+          <View style={styles.category}>
+            <View style={styles.categoryHead}>
+              <Text style={styles.categoryText}>Xizmatlar</Text>
+            </View>
+          </View>
+          <TouchableOpacity onPress={onIIVPress}>
+            <View style={styles.serviceCard}>
+              <Image
+                source={{
+                  uri: 'https://namviib.uz/public/assets/public/images/logo.png',
+                }}
+                style={styles.iivImage}
+              />
+              <View style={styles.serviceTextContainer}>
+                <Text style={styles.serviceTitle}>IIV Litseyga tayyorlov</Text>
+                <Text style={styles.serviceDescription}>
+                  IIV Litseylariga kirish uchun to'liq psixologik test, fanlar,
+                  jismoniy tayyorgarlik va tiktant qo'llanmalari jamlanmasi
+                </Text>
               </View>
-            </ScrollView>
+            </View>
+          </TouchableOpacity>
+          <View style={styles.serviceCard}>
+            <Image
+              source={{
+                uri: 'https://uzdjtsunf.uz/wp-content/uploads/2020/10/dtm.jpg',
+              }}
+              style={styles.iivImage}
+            />
+            <View style={styles.serviceTextContainer}>
+              <Text style={styles.serviceTitle}>DTM test topshirish</Text>
+              <Text style={styles.serviceDescription}>
+                O'zlashtirgan bilimlaringizni DTM tomonidan tasdiqlangan testni
+                yechib tekshiring
+              </Text>
+            </View>
+          </View>
+          <View style={styles.serviceCard}>
+            <Image
+              source={{
+                uri: 'https://uzdjtsunf.uz/wp-content/uploads/2020/10/dtm.jpg',
+              }}
+              style={styles.iivImage}
+            />
+            <View style={styles.serviceTextContainer}>
+              <Text style={styles.serviceTitle}>Test tahlili</Text>
+              <Text style={styles.serviceDescription}>
+                Javobsiz yoki qiyinchilik tug'dirgan testlar yechimlari va
+                to'liq tahlini video dars korinishida o'rganing
+              </Text>
+            </View>
           </View>
           <View style={styles.topCourse}>
             <View style={styles.courseHead}>
               <Text style={styles.courseText}>Xarid qilingan kurslar</Text>
-              {/* <TouchableOpacity onPress={onCoursePress}>
-                <Text style={styles.allCourse}>Посмотреть все</Text>
-              </TouchableOpacity> */}
             </View>
             <ScrollView
               horizontal={true}
               showsHorizontalScrollIndicator={false}
               style={{borderRadius: 10, marginTop: 13}}>
               <View style={styles.courseCards}>
-                {/* {TOP_COURSES.map((e, index) => {
-                  return (
-                    <TouchableOpacity
-                      key={index}
-                      style={styles.courseCard}
-                      onPress={onCoursePress}
-                    >
-                      <Image source={e.images} />
-                      <View style={styles.popular}>
-                        <View style={styles.popIcon}>
-                          <PopIcon />
-                          <Text style={styles.popText}>{e.popular}</Text>
-                        </View>
-                        <View style={styles.star}>
-                          <StarIcon />
-                          <Text style={styles.starText}>{e.star}</Text>
-                        </View>
-                      </View>
-                      <Text style={styles.title}>{e.title}</Text>
-                      <View style={styles.price}>
-                        <Text style={styles.priceText}>{e.price}$</Text>
-                        <Text style={styles.oldPrice}>{e.oldPrice}$</Text>
-                      </View>
-                    </TouchableOpacity>
-                  );
-                })} */}
                 <View
                   style={{
                     width: Dimensions.get('screen').width - 40,
@@ -186,7 +125,6 @@ const HomeScreen = () => {
               </View>
             </ScrollView>
           </View>
-
           <View style={styles.information}>
             {INFORMATION.map((e, index) => {
               return (
@@ -239,3 +177,74 @@ const HomeScreen = () => {
   );
 };
 export default HomeScreen;
+
+/**
+ *  <ScrollView
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+              style={{borderRadius: 10, marginTop: 13}}>
+              <View style={styles.cards}>
+                {courses.map((e, index) => {
+                  let isFavorite = !!favorites[e.id];
+                  return (
+                    <>
+                      <TouchableOpacity
+                        key={index}
+                        style={styles.courseCard}
+                        disabled={!e.courses}
+                        onPress={() => onCoursePress(e)}>
+                        <Image
+                          source={{
+                            uri:
+                              e.cover ||
+                              'https://images.squarespace-cdn.com/content/v1/629acd14894a462d58ab1243/5a229a42-4031-43d8-8aba-b12e39c11982/AdobeStock_139559217.jpeg',
+                          }}
+                          style={{
+                            width: 163,
+                            height: 120,
+                            borderTopLeftRadius: 10,
+                            borderTopRightRadius: 10,
+                          }}
+                        />
+                        <View style={styles.popular}>
+                          <View style={styles.popIcon}>
+                            <PopIcon />
+                            <Text style={styles.popText}>{e.people}</Text>
+                          </View>
+                          <TouchableOpacity
+                            onPress={() => onFavoritePress(e.id)}>
+                            <View style={styles.star}>
+                              <StarIcon filled={isFavorite} />
+                            </View>
+                          </TouchableOpacity>
+                        </View>
+                        <Text style={styles.title}>{e.name}</Text>
+                        {!!e.author && (
+                          <Text
+                            style={[styles.priceText, {textAlign: 'center'}]}>
+                            O'qituvchi: {e.author}
+                          </Text>
+                        )}
+                        </TouchableOpacity>
+                        </>
+                      );
+                      return (
+                        <TouchableOpacity
+                          key={index}
+                          style={styles.card}
+                          onPress={() => onCoursePress(e)}>
+                          <Image
+                            source={{uri: e.cover}}
+                            style={styles.cardImage}
+                            resizeMode="cover"
+                          />
+                          <View>
+                            <Text style={styles.cardText}>{e.name}</Text>
+                            <Text style={styles.priceText}>{e.price}</Text>
+                          </View>
+                        </TouchableOpacity>
+                      );
+                    })}
+                  </View>
+                </ScrollView>
+ */

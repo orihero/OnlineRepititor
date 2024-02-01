@@ -31,7 +31,7 @@ const CourseVideosView = () => {
               <TouchableOpacity
                 onPress={onCoursePress(e)}
                 key={i}
-                // disabled={!e.public && (shouldBuy || shouldRegister)}
+                disabled={!e.public && (shouldBuy || shouldRegister)}
                 style={styles.card}>
                 <Image
                   source={{
@@ -50,7 +50,7 @@ const CourseVideosView = () => {
                     <Text style={styles.startText}>{e.duration}</Text>
                   </View>
                 </View>
-                {/* {!e.public && (shouldBuy || shouldRegister) ? (
+                {!e.public && (shouldBuy || shouldRegister) ? (
                   <TouchableOpacity
                     style={styles.overlay}
                     onPress={shouldBuy ? onBuyPress : onRegisterPress}>
@@ -59,7 +59,7 @@ const CourseVideosView = () => {
                       {shouldBuy ? 'kursni sotib oling' : "ro'yxatdan o'ting"}
                     </Text>
                   </TouchableOpacity>
-                ) : null} */}
+                ) : null}
               </TouchableOpacity>
             );
           })}

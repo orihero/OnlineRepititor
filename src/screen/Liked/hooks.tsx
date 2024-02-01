@@ -1,6 +1,6 @@
 import {useSelector} from 'react-redux';
 import {selectAppSettings} from '../../store/slices/app.slice';
-import {COURSES} from '../../constant';
+import {COURSES} from '../../constants';
 
 export const useFavoritesHook = () => {
   const {favorites} = useSelector(selectAppSettings);

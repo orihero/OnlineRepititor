@@ -11,7 +11,7 @@ import React from "react";
 import { SafeAreaView } from "react-native";
 import { styles } from "./styles";
 import { ArrowIcon, SearchIcon } from "../../assets/icons/icon";
-import { CATEGORY } from "../../constant";
+import { CATEGORY } from "../../constants";
 import { CategoryHooks } from "./hooks";
 import { useGoBackHook } from "../../common/hooks";
 

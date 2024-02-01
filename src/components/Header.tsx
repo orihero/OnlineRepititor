@@ -33,10 +33,10 @@ const Header = () => {
               navigation.navigate(ROUTES.HOME.NOTIFICATION as never);
             }}
           >
-            <NotificationIcon />
+            {/* <NotificationIcon />
             <View style={styles.notiText}>
               <Text style={styles.text}>1</Text>
-            </View>
+            </View> */}
           </TouchableOpacity>
         </View>
       </SafeAreaView>

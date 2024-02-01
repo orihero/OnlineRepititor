@@ -5,24 +5,28 @@ import {
   ScrollView,
   Text,
   TouchableOpacity,
-  View
+  View,
 } from 'react-native';
 // import Video from 'react-native-video';
-import { ArrowIcon } from '../../assets/icons/icon';
-import { COURSES } from '../../constant';
-import { useBuyCourseHook } from './hooks';
-import { styles } from './style';
+import {ArrowIcon} from '../../assets/icons/icon';
+import {COURSES} from '../../constants';
+import {useBuyCourseHook} from './hooks';
+import {styles} from './style';
+import {SERVER_URL} from '../../api/requests';
 
 const service_id = '31135';
 const merchant_id = '23305';
-const amount = '1400000.00';
+const amount = '1000.00';
 // &transaction_param={transaction_param}&return_url={return_url}&card_type={card_type}
 
-const CLICK_URL = `https://my.click.uz/services/pay?service_id=${service_id}&merchant_id=${merchant_id}&amount=${amount}&transaction_param=test`;
+//https://my.click.uz/services/pay?service_id={service_id}&merchant_id={merchant_id}&amount={amount}&transaction_param={transaction_param}&return_url={return_url}
 
 const BuyCourseScreen = () => {
-  const {goBack, onSelectCourse, selectedCourses} = useBuyCourseHook();
+  const {goBack, onSelectCourse, selectedCourses, userPhone} =
+    useBuyCourseHook();
 
+  const return_url = `${SERVER_URL}/paymentSuccessfull?courses=${selectedCourses}`;
+  const CLICK_URL = `https://my.click.uz/services/pay?service_id=${service_id}&merchant_id=${merchant_id}&amount=${amount}&transaction_param=${userPhone}&return_url=${return_url}`;
   // return (
   //   <View style={{backgroundColor: 'red', flex: 1}}>
   //     <Video

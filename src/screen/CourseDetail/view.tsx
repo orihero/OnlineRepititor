@@ -1,5 +1,5 @@
 import {useRoute} from '@react-navigation/native';
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import {Dimensions, StyleSheet, View} from 'react-native';
 import Orientation from 'react-native-orientation-locker';
 import Video from 'react-native-video-controls';
@@ -10,6 +10,9 @@ const CourseDetailView = () => {
   const [isPortrait, setIsPortrait] = React.useState(true);
   const route = useRoute();
   const goBack = useGoBackHook();
+
+  const videoRef = useRef<Video>();
+
   const onOrientationChange = () => {
     setIsPortrait(e => !e);
   };
@@ -42,6 +45,7 @@ const CourseDetailView = () => {
         onExitFullscreen={() => {
           Orientation.lockToPortrait();
         }}
+        controlTimeout={3000}
       />
     </View>
   );

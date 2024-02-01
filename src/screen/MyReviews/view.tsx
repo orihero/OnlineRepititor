@@ -10,7 +10,7 @@ import {
 import React from 'react';
 import {styles} from './styles';
 import {ArrowIcon, RemoveIcon, StarIcon} from '../../assets/icons/icon';
-import {MY_REVIEWS} from '../../constant';
+import {MY_REVIEWS} from '../../constants';
 import {useGoBackHook} from '../../common/hooks';
 
 const MyReviewsScreen = () => {

@@ -7,7 +7,7 @@ import {
   ScrollView,
 } from "react-native";
 import React from "react";
-import { REVIEWS } from "../constant";
+import { REVIEWS } from "../constants";
 import { StarIcon } from "../assets/icons/icon";
 import { styles } from "../screen/Home/styles";
 import { useNavigation } from "@react-navigation/native";
