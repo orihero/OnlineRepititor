@@ -1,6 +1,10 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
+  courseDescription: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
   overlayText: {
     color: '#0600ac',
     fontSize: 16,
@@ -102,8 +106,9 @@ export const styles = StyleSheet.create({
   coursAbout: {
     paddingHorizontal: 15,
     paddingVertical: 15,
-    justifyContent: 'space-between',
+    // justifyContent: 'space-between',
     // backgroundColor: 'red',
+    flex: 1,
   },
 
   titleCard: {

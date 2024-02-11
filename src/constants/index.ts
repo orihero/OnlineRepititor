@@ -24,7 +24,7 @@ export const COURSES = [
             duration: '8 min',
             content:
               "Bu yerda video haqida qisqacha ma'lumot va dars nimalardan iboratligi yoziladi",
-            public: true,
+            public: false,
           },
           {
             title: 'Eng qadimgi odamlarning rivojlanish bosqichlari',
@@ -525,7 +525,7 @@ export const COURSES = [
       },
     ],
     videoUrl:
-      'https://d1kuux35i7xqfi.cloudfront.net/Tarix/6-sinf/1-Dars%20Tarix%20Kirish-3333.m4v',
+      'https://d1kuux35i7xqfi.cloudfront.net/Kirish+darslari/Tarix+kirish.mp4',
   },
   {
     id: 3,
@@ -534,7 +534,7 @@ export const COURSES = [
     cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/fizika.png',
     courses: [
       {
-        name: 'Kirish',
+        name: 'Mexanika',
         cover: 'https://cdn-icons-png.flaticon.com/512/4650/4650640.png',
         content: [
           {
@@ -542,138 +542,159 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2001-1.m4v',
             duration: '24 min',
-            public: true,
+            public: false,
+            documentUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/1-Mavzu(Kirish.Fizik+kattaliklar)-stamped.pdf',
           },
           {
             title: 'Fizik kattaliklarning birliklari',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2002-2.m4v',
             duration: '15 min',
-            public: true,
+            public: false,
+            documentUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/2-Mavzu(Fizik+kattaliklarning+birliklari)-stamped.pdf',
           },
           {
             title: 'Tekislikda ikki nuqta orasidagi masofa',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2003-3.m4v',
             duration: '12 min',
-            public: true,
+            public: false,
+            documentUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/3-Mavzu(Tekislikda+ikki+nuqta+orasidagi+masofa)-stamped.pdf',
           },
           {
             title: 'Trigonometriya elementlari',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2004-4.m4v',
             duration: '10 min',
-            public: true,
+            public: false,
+            documentUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/4_MavzuTrigonametriya_elementlari_va_ular_orqali_ko%E2%80%99chish_proyeksiyalarini-stamped.pdf',
           },
           {
             title: "To'g'ri chiziqli tekis harakat",
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2005-5.m4v',
             duration: '21 min',
-            public: true,
+            public: false,
+            documentUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/5-Mavzu(To%E2%80%99g%E2%80%99ri+chiziqli+teks+harakat)-stamped.pdf',
           },
           {
             title: "To'g'ri chiziqli tekis harakat grafigi",
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2006-6.m4v',
             duration: '18 min',
-            public: true,
+            public: false,
+            documentUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/6-Mavzu(To%E2%80%99g%E2%80%99ri+chiziqli+teks+harakat+grafiklari)-stamped.pdf',
           },
           {
             title: 'Harakat nisbiyligi',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2007-7.m4v',
             duration: '24 min',
-            public: true,
+            public: false,
+            documentUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/7-Mavzu(Harakat+nisbiyligi)-stamped.pdf',
           },
           {
             title: 'Tezliklarni qo’shish',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2008-8.m4v',
             duration: '24 min',
-            public: true,
+            public: false,
+            documentUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/8-Mavzu(Tezliklarni+qo%E2%80%99shish)-stamped.pdf',
           },
           {
             title: 'O’rtacha va oniy tezlik',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2009-9.m4v',
             duration: '24 min',
-            public: true,
+            public: false,
+            documentUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/9-Mavzu(O%E2%80%99rtacha+va+oniy+tezlik)-stamped.pdf',
           },
           {
             title: 'To’g’ri chiziqli teks o’zgaruvchan harakat',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2010-10.m4v',
             duration: '24 min',
-            public: true,
+            public: false,
+            documentUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/10-Mavzu(To%E2%80%99g%E2%80%99ri+chiziqli+teks+o%E2%80%99zgaruvchan+harakat)-stamped.pdf',
           },
           {
             title: 'To’g’ri chiziqli teks o’zgaruvchan harakatning tenglamasi',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2011-11.m4v',
             duration: '24 min',
-            public: true,
+            public: false,
+            documentUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/11_MavzuTo%E2%80%99g%E2%80%99ri_chiziqli_teks_o%E2%80%99zgaruvchan_harakatning_tenglamasi-stamped.pdf',
           },
           {
             title: 'To’g’ri chiziqli teks o’zgaruvchan harakat grafiklari',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2012-12.m4v',
             duration: '24 min',
-            public: true,
-          },
-          {
-            title: 'Jismlarning erkin tushishi',
-            videoUrl:
+            public: false,
+            documentUrl:
+              'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/12_MavzuTo%E2%80%99g%E2%80%99ri_chiziqli_teks_o%E2%80%99zgaruvchan_harakat_grafiklari-stamped.pdf',
+            },
+            {
+              title: 'Jismlarning erkin tushishi',
+              videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2013-13.m4v',
-            duration: '24 min',
-            public: true,
+              duration: '24 min',
+              public: false,
+              documentUrl:
+                'https://d1kuux35i7xqfi.cloudfront.net/Fizika/qollanmalar/13-Mavzu(Jismlarning+erkin+tushishi)-stamped.pdf',
+            
           },
           {
             title: 'Egri chiziqli harakat. Aylana bo’ylab teks harakat',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Fizika/Fizika%2014-14.m4v',
             duration: '24 min',
-            public: true,
+            public: false,
           },
-          // {
-          //   title: 'Gorizontal otilgan jism harakati',
-          //   videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Fizika/F1-1.m4v',
-          //   duration: '16 min',
-          //   public: true,
-          // },
-          // {
-          //   title: 'Gorizontga qiya otilgan jism harakati',
-          //   videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Fizika/F2-2.m4v',
-          //   duration: '17 min',
-          //   public: true,
-          // },
-          // {
-          //   title: 'Dinamika, Nyuton qonunlari',
-          //   videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Fizika/F3-3.m4v',
-          //   duration: '33 min',
-          //   public: true,
-          // },
         ],
       },
       {
-        name: 'Termodinamika',
+        name: 'Molekulyar fizika',
         cover: 'https://cdn-icons-png.flaticon.com/512/6813/6813621.png',
       },
       {
-        name: 'Elektrodinamika',
+        name: 'Elektr',
+        cover:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electromagnetism.svg/1880px-Electromagnetism.svg.png',
+      },
+      {
+        name: 'Magnetizm',
         cover:
           'https://st4.depositphotos.com/4177785/30973/v/450/depositphotos_309731958-stock-illustration-electromagnetism-color-icon-electromagnetic-force.jpg',
       },
       {
-        name: 'To‘lqin optikasi',
+        name: 'Optika',
         cover: 'https://cdn-icons-png.flaticon.com/512/342/342359.png',
       },
       {
-        name: 'Maxsus nisbiylik nazariyasi ',
+        name: 'Atom fizikasi',
         cover:
-          'https://albertobuscato.com/wp-content/uploads/2021/01/Cabecera-EMC-e1611584694648.png',
+          'https://cdn0.iconfinder.com/data/icons/science-191/64/Electron-atomic-physics-nuclear-education-atom-science--512.png',
+      },
+      {
+        name: 'Yadro fizikasi',
+        cover:
+          'https://www.sciencekids.co.nz/images/pictures/physics/nuclearsymbol.jpg',
       },
     ],
+    videoUrl:
+      'https://d1kuux35i7xqfi.cloudfront.net/Kirish+darslari/Fizika+kirish.mp4',
   },
   {
     id: 8,
@@ -690,70 +711,133 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i1.mp4',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '1-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1d1yu4UTB6P7UOUVcVSYciBTic7KEwDWnXCYUxlDbNd8/values/1?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i2.mp4',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '2-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1d1yu4UTB6P7UOUVcVSYciBTic7KEwDWnXCYUxlDbNd8/values/2?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i3.mp4',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '3-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1d1yu4UTB6P7UOUVcVSYciBTic7KEwDWnXCYUxlDbNd8/values/3?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i4.mp4',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '4-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1d1yu4UTB6P7UOUVcVSYciBTic7KEwDWnXCYUxlDbNd8/values/4?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i5.mp4',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '5-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1d1yu4UTB6P7UOUVcVSYciBTic7KEwDWnXCYUxlDbNd8/values/5?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i6.mp4',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '6-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1d1yu4UTB6P7UOUVcVSYciBTic7KEwDWnXCYUxlDbNd8/values/6?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i7.mp4',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '7-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1d1yu4UTB6P7UOUVcVSYciBTic7KEwDWnXCYUxlDbNd8/values/7?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i8.mp4',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '8-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1d1yu4UTB6P7UOUVcVSYciBTic7KEwDWnXCYUxlDbNd8/values/8?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i9.mp4',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '9-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1d1yu4UTB6P7UOUVcVSYciBTic7KEwDWnXCYUxlDbNd8/values/9?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ingliz%20tili/i10.mp4',
             duration: '8 min',
-            public: true,
+            public: false,
           },
         ],
       },
@@ -804,6 +888,8 @@ export const COURSES = [
       },
     ],
     author: "Toshpo'latov Javlon",
+    videoUrl:
+      'https://d1kuux35i7xqfi.cloudfront.net/Kirish+darslari/kirish+ingiliz+tili.mp4',
   },
   {
     id: 5,
@@ -821,70 +907,77 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B1-1.m4v',
             duration: '34 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B2-3.m4v',
             duration: '34 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B3-4.m4v',
             duration: '34 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B4-5.m4v',
             duration: '34 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B5-6.m4v',
             duration: '34 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '1-5 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1vB75icbwBe1fxZlAshfa4SpS6rmEBQgCkANZKnwj350/values/Лист1?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B6-7.m4v',
             duration: '34 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B7-8.m4v',
             duration: '34 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B8-9.m4v',
             duration: '34 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B9-10.m4v',
             duration: '34 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Biologiya/B10-2.m4v',
             duration: '34 min',
-            public: true,
+            public: false,
           },
         ],
       },
@@ -919,12 +1012,15 @@ export const COURSES = [
           'https://play-lh.googleusercontent.com/_oICNH4tD3SW1xyTdo-vaOE_NMdeDxv0MjLY6c_L_NQHxeDe3jQEnRUr7w1U5s-Ncck',
       },
     ],
+    videoUrl:
+      'https://d1kuux35i7xqfi.cloudfront.net/Kirish+darslari/Kirish+biologiya.mp4',
   },
   {
     id: 6,
     name: 'Geografiya',
     author: 'Nazarov Mirhumoyun',
-    videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G1-1.m4v',
+    videoUrl:
+      'https://d1kuux35i7xqfi.cloudfront.net/Kirish+darslari/Kirish+geografiya.mp4',
     cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/Geografiya+1.jpg',
     courses: [
       {
@@ -937,7 +1033,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G1-1.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '1-mavzu testi',
@@ -951,7 +1047,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G2-12.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '2-mavzu testi',
@@ -965,7 +1061,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G3-13.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '3-mavzu testi',
@@ -979,7 +1075,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G4-17.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '4-mavzu testi',
@@ -993,7 +1089,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G5-18.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '5-mavzu testi',
@@ -1007,7 +1103,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G6-19.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '6-mavzu testi',
@@ -1021,7 +1117,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G7-20.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '7-mavzu testi',
@@ -1035,7 +1131,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G8-21.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '8-mavzu testi',
@@ -1049,7 +1145,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G9-22.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '9-mavzu testi',
@@ -1063,7 +1159,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G10-2.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '10-mavzu testi',
@@ -1077,7 +1173,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G11-3.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '11-mavzu testi',
@@ -1091,7 +1187,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G12-4.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '12-mavzu testi',
@@ -1105,7 +1201,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G13-5.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '13-mavzu testi',
@@ -1119,7 +1215,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G14-6.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '14-mavzu testi',
@@ -1133,7 +1229,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G15-7.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '15-mavzu testi',
@@ -1147,7 +1243,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G16-8.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '16-mavzu testi',
@@ -1161,7 +1257,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G17-9.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '17-mavzu testi',
@@ -1175,7 +1271,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G18-10.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '18-mavzu testi',
@@ -1189,7 +1285,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G19-11.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '19-mavzu testi',
@@ -1203,7 +1299,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G20-13.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '20-mavzu testi',
@@ -1217,7 +1313,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G21-14.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: '21-mavzu testi',
@@ -1231,7 +1327,7 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Geografiya/G22-15.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
         ],
       },
@@ -1279,161 +1375,161 @@ export const COURSES = [
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/1-Dars%20Matematika-2.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/2-Dars%20Matematika-13.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/1-Dars%20Matematika-2.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/3-Dars%20Matematika-17.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/4-Dars%20Matematika-18.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/5-Dars%20Matematika-19.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/6-Dars%20Matematika-20.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/7-Dars%20Matematika-21.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/8-Dars%20Matematika-22.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/09-1.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/10-3.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/11-4.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/12-5.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/13-6.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/14-7.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/15-8.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/16-9.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/17-10.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/18-11.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/19-12.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/20-14.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/21-15.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Matemitika/22-16.m4v',
             duration: '3 min',
-            public: true,
+            public: false,
           },
         ],
       },
@@ -1473,7 +1569,8 @@ export const COURSES = [
     name: 'Huquq',
     author: 'Eshquvvatov Bekzod',
     cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/huquq+2.jpg',
-    videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H1-1.m4v',
+    videoUrl:
+      'https://d1kuux35i7xqfi.cloudfront.net/Kirish+darslari/Kirish+huquq.mp4',
     courses: [
       {
         name: "8-sinf O'zbekiston davlati va huquqi asoslari",
@@ -1484,175 +1581,210 @@ export const COURSES = [
             title: "O'zbekiston Respublikasi mustaqil davlat",
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H1-1.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H2-12.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H3-14.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H5-16.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H6-17.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '1-5 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1qF5EGRILBUP-CGXPS80Ucl7CNDINzoOFoXWU61xCiXA/values/Лист1?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H7-18.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H8-19.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H9-20.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H10-2.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H11-3.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '6-10 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1qF5EGRILBUP-CGXPS80Ucl7CNDINzoOFoXWU61xCiXA/values/Лист2?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H12-4.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H13-5.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H14-6.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H15-7.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H16-8.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '11-15 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1qF5EGRILBUP-CGXPS80Ucl7CNDINzoOFoXWU61xCiXA/values/Лист3?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H17-9.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H18-10.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H19-11.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H20-4.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H21-5.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '16-20 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1qF5EGRILBUP-CGXPS80Ucl7CNDINzoOFoXWU61xCiXA/values/Лист4?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H22-6.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H23-7.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H24-8.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H25-9.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H26-10.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '21-25 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1qF5EGRILBUP-CGXPS80Ucl7CNDINzoOFoXWU61xCiXA/values/Лист5?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H27-11.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H28-12.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H29-13.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Huquq/H30-14.m4v',
             duration: '8 min',
-            public: true,
+            public: false,
           },
         ],
       },
@@ -1678,6 +1810,8 @@ export const COURSES = [
     name: 'Kimyo',
     author: 'Diyorbek Boymurodov',
     cover: 'https://d1kuux35i7xqfi.cloudfront.net/assets/Kimyo.jpg',
+    videoUrl:
+      'https://d1kuux35i7xqfi.cloudfront.net/Kirish+darslari/Kirish+Kimyo.mp4',
     courses: [
       {
         name: '7-sinf Kimyo',
@@ -1687,37 +1821,44 @@ export const COURSES = [
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Kimyo/1k.mp4',
             duration: '16 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Kimyo/k2.mp4',
             duration: '16 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Kimyo/k3.mp4',
             duration: '16 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Kimyo/k4.mp4',
             duration: '16 min',
-            public: true,
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Kimyo/k5.mp4',
             duration: '16 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '1-5 mavzular testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1QO2z4gCSsFP99MQGTriDgK4ew9gEGBuHDHVUii8Dhks/values/Лист1?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Kimyo/k6.mp4',
             duration: '16 min',
-            public: true,
+            public: false,
           },
         ],
       },
@@ -1757,104 +1898,209 @@ export const COURSES = [
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o1.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '1-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/1?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o2.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '2-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/2?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o3.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '3-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/3?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o4.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '4-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/4?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o5.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '5-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/5?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o6.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '6-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/6?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o7.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '7-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/7?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o8.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '8-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/8?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl: 'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o9.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '9-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/9?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o10.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '10-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/10?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o11.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '11-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/11?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o12.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '12-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/12?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o13.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '13-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/13?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o14.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '14-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/14?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o15.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
+          },
+          {
+            title: '15-mavzu testi',
+            test: 'https://sheets.googleapis.com/v4/spreadsheets/1cTccUqA8B786M6eUqBM1VYiBoqpHR0qFRBafatUlohk/values/15?valueRenderOption=FORMATTED_VALUE&key=AIzaSyBlIVtUhk8BPAHsqt8jtRGmI_GLUQg7nTs',
+            icon: 'https://cdn3.iconfinder.com/data/icons/education-180/64/x-17-1024.png',
+            duration: '20 min',
+            public: false,
           },
           {
             title: 'Dars',
             videoUrl:
               'https://d1kuux35i7xqfi.cloudfront.net/Ona%20tili/o16.mp4',
             duration: '24 min',
-            public: true,
+            public: false,
           },
         ],
       },

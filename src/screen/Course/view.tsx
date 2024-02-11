@@ -71,6 +71,7 @@ const CourseScreen = () => {
                 <TouchableOpacity
                   onPress={() => onCoursePress(e)}
                   key={index}
+                  disabled={!e?.content}
                   style={styles.card}>
                   <Image
                     source={{uri: e.cover}}
@@ -78,23 +79,18 @@ const CourseScreen = () => {
                   />
                   <View style={styles.coursAbout}>
                     <Text style={styles.titleCard}>{e.name}</Text>
-                    <View style={styles.priceLesson}>
-                      {/* <View style={styles.price}>
-                        <Text style={styles.coursPrice}>{e.price}$</Text>
-                        <Text style={styles.oldPrice}>{e.oldPrice}$</Text>
-                      </View> */}
-                      <View style={styles.coursPeople}>
-                        <View style={styles.popular}>
-                          <PopIcon />
-                          <Text style={styles.popText}>{course.people}</Text>
-                        </View>
-                        <View style={styles.star}>
-                          {/* <StarIcon /> */}
-                          <Text style={styles.startText}>
-                            O'qituvchi: {course.author}
-                          </Text>
-                        </View>
-                      </View>
+                    <View style={styles.star}>
+                      <Text style={styles.startText}>
+                        O'qituvchi: {course.author}
+                      </Text>
+                      {!e.content && (
+                        <Image
+                          source={{
+                            uri: 'https://cdn-icons-png.flaticon.com/512/2889/2889676.png',
+                          }}
+                          style={{width: 20, height: 20}}
+                        />
+                      )}
                     </View>
                   </View>
                 </TouchableOpacity>

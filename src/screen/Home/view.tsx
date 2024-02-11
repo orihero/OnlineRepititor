@@ -54,7 +54,7 @@ const HomeScreen = () => {
             <View style={styles.serviceCard}>
               <Image
                 source={{
-                  uri: 'https://namviib.uz/public/assets/public/images/logo.png',
+                  uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Emblem_of_Uzbekistan.svg/800px-Emblem_of_Uzbekistan.svg.png',
                 }}
                 style={styles.iivImage}
               />
@@ -70,7 +70,7 @@ const HomeScreen = () => {
           <View style={styles.serviceCard}>
             <Image
               source={{
-                uri: 'https://uzdjtsunf.uz/wp-content/uploads/2020/10/dtm.jpg',
+                uri: 'https://uzbmb.uz/upload/file/post/news/Icon/dtm.jpg',
               }}
               style={styles.iivImage}
             />
@@ -85,7 +85,7 @@ const HomeScreen = () => {
           <View style={styles.serviceCard}>
             <Image
               source={{
-                uri: 'https://uzdjtsunf.uz/wp-content/uploads/2020/10/dtm.jpg',
+                uri: 'https://uzbmb.uz/upload/file/post/news/Icon/dtm.jpg',
               }}
               style={styles.iivImage}
             />

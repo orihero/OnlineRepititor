@@ -30,6 +30,7 @@ export enum HOME {
   COURSE_TEST = 'COURSE_TEST',
   BUY_COURSE = 'BUY_COURSE',
   IIV = 'IIV',
+  PDF = 'PDF',
 }
 
 export enum PROFILE {

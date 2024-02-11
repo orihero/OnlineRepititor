@@ -71,11 +71,6 @@ const ProfileScreen = () => {
           </View>
           <View style={styles.inputContainer}>
             <View style={{marginTop: 13}}>
-              <Text style={{color: '#C8C8C8', fontWeight: '500'}}>Email</Text>
-              <TextInput style={styles.input} value={user.email} />
-            </View>
-
-            <View style={{marginTop: 13}}>
               <Text style={{color: '#C8C8C8', fontWeight: '500'}}>
                 Tug'ilgan sana
               </Text>

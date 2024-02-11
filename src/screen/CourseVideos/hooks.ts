@@ -3,6 +3,7 @@ import {ROUTES} from '../../navigation/routes';
 import {useGoBackHook} from '../../common/hooks';
 import {useSelector} from 'react-redux';
 import {selectAppSettings} from '../../store/slices/app.slice';
+import {Linking} from 'react-native';
 
 export const useCourseVideoHook = () => {
   const route = useRoute();
@@ -40,6 +41,10 @@ export const useCourseVideoHook = () => {
     navigation.navigate(ROUTES.AUTH.LOGIN);
   };
 
+  const onDocumentPress = (e: string) => () => {
+    navigation.navigate(ROUTES.HOME.PDF, {url: e});
+  };
+
   const shouldRegister = !accessToken;
   return {
     goBack,
@@ -50,6 +55,7 @@ export const useCourseVideoHook = () => {
     shouldBuy,
     shouldRegister,
     onBuyPress,
-    onRegisterPress
+    onRegisterPress,
+    onDocumentPress,
   };
 };

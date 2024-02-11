@@ -14,6 +14,7 @@ const CourseVideosView = () => {
     shouldRegister,
     onBuyPress,
     onRegisterPress,
+    onDocumentPress,
   } = useCourseVideoHook();
   let index = 0;
   return (
@@ -45,9 +46,19 @@ const CourseVideosView = () => {
                   <Text style={styles.titleCard}>
                     {!!e.test ? '' : `${++index}.`} {e.title}
                   </Text>
-                  <View style={styles.star}>
-                    <ClockIcon />
-                    <Text style={styles.startText}>{e.duration}</Text>
+                  <View style={styles.courseDescription}>
+                    <View style={styles.star}>
+                      <ClockIcon />
+                      <Text style={styles.startText}>{e.duration}</Text>
+                    </View>
+                    {!!e.documentUrl && (
+                      <TouchableOpacity
+                        onPress={onDocumentPress(e.documentUrl)}>
+                        <Text style={[styles.startText, {fontWeight: 'bold'}]}>
+                          Qo'llanma
+                        </Text>
+                      </TouchableOpacity>
+                    )}
                   </View>
                 </View>
                 {!e.public && (shouldBuy || shouldRegister) ? (

@@ -19,6 +19,7 @@ import VerifyScreen from '../screen/Verify/view';
 import Tabs from './Tab';
 import {ROUTES} from './routes';
 import IIVScreen from '../screen/IIV/view';
+import PdfScreen from '../screen/Pdf/view';
 
 export type RootNavigatorParamList = {
   [ROUTES.LANGUAGE.RUS]: undefined;
@@ -42,6 +43,7 @@ export type RootNavigatorParamList = {
   [ROUTES.BALANCE.MYREVIEWS]: undefined;
   [ROUTES.AUTH.VERIFY]: {phone: string};
   [ROUTES.HOME.IIV]: undefined;
+  [ROUTES.HOME.PDF]: {url: string};
 };
 
 const Stack = createNativeStackNavigator<RootNavigatorParamList>();
@@ -88,6 +90,7 @@ const RootNavigator = () => {
           name={ROUTES.HOME.COURSE_INFO}
           component={CourseDetailView}
         />
+        <Stack.Screen name={ROUTES.HOME.PDF} component={PdfScreen} />
         <Stack.Screen
           name={ROUTES.HOME.COURSE_VIDEOS}
           component={CourseVideosView}

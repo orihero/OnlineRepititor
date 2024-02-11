@@ -24,33 +24,25 @@ const validation = yup.object({
     .string()
     .min(3, "Noto'g'ri viloyat")
     .required('Viloyatingizni kiritish majburiy'),
-  district: yup
-    .string()
-    .min(2, "Noto'g'ri tuman")
-    .required('Tumaningizni kiritish majburiy'),
   dateOfBirth: yup
     .string()
     .matches(dateRegex, "Tug'ilgan sana noto'g'ri")
     .required("Tug'ilgan sana majburiy"),
   name: yup.string().required('Ism majburiy'),
   surname: yup.string().required('Familya majburiy'),
-  email: yup
-    .string()
-    .email("Pochta noto'gri kiritlgan")
-    .required('Pochta majburiy'),
+  affilateSource: yup.string().required('Biz haqimizda qayerdan eshitdingiz!'),
 });
 
 export const useRegisterHook = () => {
   const navigation = useNavigation();
   const [state, setState] = useState<yup.InferType<typeof validation>>({
     dateOfBirth: '',
-    district: '',
-    email: '',
     name: '',
     parentNumber: '',
     phone: '',
     region: '',
     surname: '',
+    affilateSource: '',
   });
   const [loading, setLoading] = useState(false);
 
@@ -91,5 +83,15 @@ export const useRegisterHook = () => {
     setLoading(false);
   };
 
-  return {onSubmit, goBack, getInputProps, loading};
+  const onTCPress = () => {
+    navigation.navigate(ROUTES.HOME.PDF, {
+      url: 'https://d1kuux35i7xqfi.cloudfront.net/assets/tc.pdf',
+    });
+  };
+
+  console.log('====================================');
+  console.log(state);
+  console.log('====================================');
+
+  return {onSubmit, goBack, getInputProps, loading, onTCPress};
 };
