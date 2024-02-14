@@ -32,7 +32,7 @@ export const useVerifyHook = () => {
     }
     try {
       setLoading(true);
-      const res = await REQUESTS.auth.verify({otp, phone});
+      const res = await REQUESTS.auth.verify({otp, phone: `+998${phone}`});
       dispatch(
         setTokens({
           accessToken: res.data.access_token,

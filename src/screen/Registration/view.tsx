@@ -13,6 +13,8 @@ import {styles} from './styles';
 import {ArrowIcon} from '../../assets/icons/icon';
 import {useRegisterHook} from './hooks';
 import SelectDropdown from 'react-native-select-dropdown';
+import MaskInput from 'react-native-mask-input';
+import {PHONE_INPUT_PROPS} from '../../common/configs';
 
 const RegistrationScreen = () => {
   const {goBack, onSubmit, getInputProps, loading, onTCPress} =
@@ -35,7 +37,6 @@ const RegistrationScreen = () => {
               <Text style={{color: '#343936'}}>Ism</Text>
               <TextInput
                 placeholderTextColor="#343936"
-                placeholder="Eshmat"
                 style={styles.input}
                 {...getInputProps('name')}
               />
@@ -44,7 +45,6 @@ const RegistrationScreen = () => {
               <Text style={{color: '#343936'}}>Familiya</Text>
               <TextInput
                 placeholderTextColor="#343936"
-                placeholder="Toshmatov"
                 style={styles.input}
                 {...getInputProps('surname')}
               />
@@ -53,26 +53,38 @@ const RegistrationScreen = () => {
               <Text style={{color: '#343936'}}>Telefon raqam</Text>
               <TextInput
                 placeholderTextColor="#343936"
-                placeholder="+998776665544"
                 style={styles.input}
                 {...getInputProps('phone')}
               />
             </View>
             <View style={{marginTop: 13}}>
               <Text style={{color: '#343936'}}>Ota onangiz telefon raqami</Text>
-              <TextInput
+              <MaskInput
                 placeholderTextColor="#343936"
-                placeholder="+998776665544"
                 style={styles.input}
+                {...PHONE_INPUT_PROPS}
                 {...getInputProps('parentNumber')}
               />
             </View>
             <View style={{marginTop: 13}}>
-              <Text style={{color: '#343936'}}>Tug'ilgan yilingiz</Text>
-              <TextInput
+              <Text style={{color: '#343936'}}>
+                Tug'ilgan yilingiz (01.01.2005)
+              </Text>
+              <MaskInput
                 placeholderTextColor="#343936"
-                placeholder="01.01.1980"
                 style={styles.input}
+                mask={[
+                  /\d/,
+                  /\d/,
+                  '.',
+                  /\d/,
+                  /\d/,
+                  '.',
+                  /\d/,
+                  /\d/,
+                  /\d/,
+                  /\d/,
+                ]}
                 {...getInputProps('dateOfBirth')}
               />
             </View>
@@ -80,7 +92,6 @@ const RegistrationScreen = () => {
               <Text style={{color: '#343936'}}>Viloyat</Text>
               <TextInput
                 placeholderTextColor="#343936"
-                placeholder="Toshkent"
                 style={styles.input}
                 {...getInputProps('region')}
               />

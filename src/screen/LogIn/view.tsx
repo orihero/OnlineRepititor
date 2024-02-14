@@ -11,6 +11,8 @@ import {SafeAreaView} from 'react-native';
 import {styles} from './styles';
 import Logo from '../../components/Logo';
 import {useLoginHook} from './hooks';
+import MaskInput from 'react-native-mask-input';
+import {PHONE_INPUT_PROPS} from '../../common/configs';
 
 const LogInScreen = () => {
   const {onLoginPress, onRegisterPress, phone, loading, onPhoneChange} =
@@ -30,12 +32,14 @@ const LogInScreen = () => {
           </Text>
         </View>
         <View style={styles.inputContainer}>
-          <TextInput
+          <MaskInput
             placeholder="Raqam +998  77  666  55  44"
-            placeholderTextColor={'#C9C9C9'}
+            placeholderTextColor={'#343936'}
             style={styles.input}
             onChangeText={onPhoneChange}
             value={phone}
+            onFocus={() => onPhoneChange('+998')}
+            {...PHONE_INPUT_PROPS}
           />
         </View>
         <View>

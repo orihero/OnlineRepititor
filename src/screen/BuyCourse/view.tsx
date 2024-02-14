@@ -27,17 +27,7 @@ const BuyCourseScreen = () => {
 
   const return_url = `${SERVER_URL}/paymentSuccessfull?courses=${selectedCourses}`;
   const CLICK_URL = `https://my.click.uz/services/pay?service_id=${CLICK_SERVICE_ID}&merchant_id=${CLICK_MERCHANT_ID}&amount=${amount}&transaction_param=${userPhone}`;
-  // return (
-  //   <View style={{backgroundColor: 'red', flex: 1}}>
-  //     <Video
-  //       source={{
-  //         uri: 'https://d1kuux35i7xqfi.cloudfront.net/o8aBIcUReE6rwCD9BHgFkiyGQfvZlREBAg6xKA.mp4',
-  //       }}
-  //       style={{width: Dimensions.get('window').width, height: 100}}
-  //     />
-  //   </View>
-  // );
-
+  
   return (
     <View style={{flex: 1}}>
       <View style={styles.header}>

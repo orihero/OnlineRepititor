@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
   },
 
   authorizationDic: {
-    color: "#C8C8C8",
+    color: "#343936",
     textAlign: "center",
     paddingTop: 10,
     lineHeight: 20
@@ -76,7 +76,7 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     paddingTop: 17,
     fontSize: 18,
-    color: "rgba(201, 201, 201, 0.67)",
+    color: "#343936",
     lineHeight: 30
   },
 
