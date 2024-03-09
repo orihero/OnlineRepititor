@@ -2,6 +2,9 @@ import {useRoute} from '@react-navigation/native';
 import {useEffect, useState} from 'react';
 import axios from 'axios';
 import {useGoBackHook} from '../../common/hooks';
+import {REQUESTS} from '../../api/requests';
+import {useDispatch} from 'react-redux';
+import {userLoggedIn} from '../../store/slices/app.slice';
 
 export interface IQuestion {
   question: string;
@@ -23,6 +26,7 @@ export const useQuizHook = () => {
   const goBack = useGoBackHook();
 
   const {params} = useRoute();
+  const dispatch = useDispatch();
   const [questions, setQuestions] = useState<IQuestion[]>([]);
   const [score, setScore] = useState(-1);
   const [currentQuestion, setCurrentQuestion] = useState<ICurrentQuestion>({
@@ -36,7 +40,7 @@ export const useQuizHook = () => {
   const effect = async () => {
     try {
       //@ts-ignore
-      let res = await axios.get(params?.test);
+      let res = await axios.get(params?.test?.test);
       //@ts-ignore
       let q = res.data.values.reduce((p, c, i) => {
         if (i == 0) {
@@ -63,7 +67,14 @@ export const useQuizHook = () => {
     setCurrentQuestion({...currentQuestion, userChoice});
   };
 
-  const onNextPress = () => {
+  const fetchProfile = async () => {
+    try {
+      const res = await REQUESTS.user.getUserProfile();
+      dispatch(userLoggedIn(res.data));
+    } catch (error) {}
+  };
+
+  const onNextPress = async () => {
     if (score !== -1) {
       goBack();
     }
@@ -74,8 +85,19 @@ export const useQuizHook = () => {
         }
         return p;
       }, 0);
-      console.log(s, questions.length);
 
+      const {courseId, classId, videoId} = params;
+
+      try {
+        await REQUESTS.user.setProgress({
+          courseId,
+          classId,
+          testResult: ((s * 100) / questions.length).toString(),
+          progress: '',
+          videoId,
+        });
+        await fetchProfile();
+      } catch (error) {}
       setScore((s * 100) / questions.length);
     } else {
       setAnswers([...answers, currentQuestion]);
@@ -93,7 +115,7 @@ export const useQuizHook = () => {
   return {
     questions,
     //@ts-ignore
-    title: params.title,
+    title: params.test.title,
     currentQuestion,
     nextAllowed: currentQuestion.userChoice !== -1,
     score,

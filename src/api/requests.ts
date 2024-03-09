@@ -3,12 +3,13 @@ import {
   IAuthResponse,
   ILoginRequest,
   IRegisterRequest,
+  IUser,
   IVerifyRequest,
 } from './types';
 import Toast from 'react-native-toast-message';
 import {store} from '../store/configureStore';
 
-// export const SERVER_URL = 'http://10.0.2.2:7400/api';
+// export const SERVER_URL = 'http://10.0.2.2:7300/api';
 export const SERVER_URL = 'http://185.196.213.144:7400/api';
 
 export const axiosInstance = axios.create({
@@ -58,5 +59,14 @@ export const REQUESTS = {
   },
   user: {
     getUserProfile: () => axiosInstance.get('/user/me'),
+    updateUserProfile: (creds: Partial<IUser>) =>
+      axiosInstance.put('/user/me', creds),
+    setProgress: (params: {
+      classId: string;
+      courseId: string;
+      testResult: string;
+      videoId: string;
+      progress: string;
+    }) => axiosInstance.put(`/user/setProgress`, null, {params}),
   },
 };

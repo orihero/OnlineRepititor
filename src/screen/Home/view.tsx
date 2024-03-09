@@ -3,7 +3,6 @@ import React from 'react';
 import {
   Dimensions,
   Image,
-  Pressable,
   SafeAreaView,
   ScrollView,
   Text,
@@ -11,39 +10,66 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {SearchIcon} from '../../assets/icons/icon';
 import {COURSES, INFORMATION} from '../../constants';
 import {HomeHooks} from './hooks';
 import {styles} from './styles';
 
+const CourseItem = ({
+  item: e,
+  onPress,
+}: {
+  onPress: (item: (typeof COURSES)[0]) => void;
+  item: (typeof COURSES)[0];
+}) => {
+  return (
+    <TouchableOpacity key={e.name} onPress={() => onPress(e)}>
+      <View style={styles.crsCrd}>
+        <View>
+          <Text style={styles.crdTitle}>{e.name}</Text>
+          <Text>{e.author}</Text>
+        </View>
+        <Image
+          style={{width: 80, height: 80, borderRadius: 80}}
+          source={{uri: e.cover}}
+        />
+      </View>
+    </TouchableOpacity>
+  );
+};
+
 const HomeScreen = () => {
-  const {onApply, onValueChange, state, onCoursePress, onIIVPress} =
-    HomeHooks();
+  const {
+    onApply,
+    onValueChange,
+    state,
+    onCoursePress,
+    onIIVPress,
+    purchasedCourses,
+  } = HomeHooks();
 
   return (
     <SafeAreaView>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.homeContainer}>
+          {!!purchasedCourses && purchasedCourses.length > 0 && (
+            <View style={styles.topCourse}>
+              <View style={styles.courseHead}>
+                <Text style={styles.courseText}>Xarid qilingan kurslar</Text>
+              </View>
+              {purchasedCourses.map(e => {
+                return (
+                  <CourseItem onPress={onCoursePress} item={e} key={e.id} />
+                );
+              })}
+            </View>
+          )}
           <View style={styles.category}>
             <View style={styles.categoryHead}>
               <Text style={styles.categoryText}>Kurslar</Text>
             </View>
           </View>
           {COURSES.map((e, i) => {
-            return (
-              <TouchableOpacity key={e.name} onPress={() => onCoursePress(e)}>
-                <View style={styles.crsCrd}>
-                  <View>
-                    <Text style={styles.crdTitle}>{e.name}</Text>
-                    <Text>{e.author}</Text>
-                  </View>
-                  <Image
-                    style={{width: 80, height: 80, borderRadius: 80}}
-                    source={{uri: e.cover}}
-                  />
-                </View>
-              </TouchableOpacity>
-            );
+            return <CourseItem item={e} onPress={onCoursePress} />;
           })}
           <View style={styles.category}>
             <View style={styles.categoryHead}>
@@ -97,34 +123,32 @@ const HomeScreen = () => {
               </Text>
             </View>
           </View>
-          <View style={styles.topCourse}>
-            <View style={styles.courseHead}>
-              <Text style={styles.courseText}>Xarid qilingan kurslar</Text>
-            </View>
-            <ScrollView
-              horizontal={true}
-              showsHorizontalScrollIndicator={false}
-              style={{borderRadius: 10, marginTop: 13}}>
-              <View style={styles.courseCards}>
-                <View
-                  style={{
-                    width: Dimensions.get('screen').width - 40,
-                    height: 200,
-                    backgroundColor: 'white',
-                    borderRadius: 10,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                  }}>
-                  <LottieView
-                    source={require('../../assets/lottie/empty.json')}
-                    style={{width: 150, height: 150}}
-                    autoPlay
-                  />
-                  <Text>Sizda sotib olingan kurslar yo'q</Text>
+          {!purchasedCourses ||
+            (purchasedCourses.length == 0 && (
+              <View style={styles.topCourse}>
+                <View style={styles.courseHead}>
+                  <Text style={styles.courseText}>Xarid qilingan kurslar</Text>
+                </View>
+                <View style={styles.courseCards}>
+                  <View
+                    style={{
+                      width: Dimensions.get('screen').width - 40,
+                      height: 200,
+                      backgroundColor: 'white',
+                      borderRadius: 10,
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                    }}>
+                    <LottieView
+                      source={require('../../assets/lottie/empty.json')}
+                      style={{width: 150, height: 150}}
+                      autoPlay
+                    />
+                    <Text>Sizda sotib olingan kurslar yo'q</Text>
+                  </View>
                 </View>
               </View>
-            </ScrollView>
-          </View>
+            ))}
           <View style={styles.information}>
             {INFORMATION.map((e, index) => {
               return (

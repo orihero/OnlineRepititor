@@ -6,20 +6,19 @@ import * as yup from 'yup';
 import Toast from 'react-native-toast-message';
 import {REQUESTS} from '../../api/requests';
 
-const phoneRegExp =
-  /^[+]998([0-9][012345789]|[0-9][125679]|7[01234569])[0-9]{7}$/;
+const phoneRegExp = /^([0-9][012345789]|[0-9][125679]|7[01234569])[0-9]{7}$/;
 const dateRegex =
   /^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/;
 
 const validation = yup.object({
-  phone: yup
+  phoneUnmasked: yup
     .string()
     .matches(phoneRegExp, "Noto'g'ri telefon raqam kiritilgan")
     .required('Telefon raqam majburiy'),
-  parentNumber: yup
-    .string()
-    .required('Ota onangiz telefon raqami majburiy')
-    .matches(phoneRegExp, "Noto'g'ri telefon raqam kiritilgan"),
+  // parentNumberUnmasked: yup
+  //   .string()
+  //   .required('Ota onangiz telefon raqami majburiy')
+  //   .matches(phoneRegExp, "Noto'g'ri telefon raqam kiritilgan"),
   region: yup
     .string()
     .min(3, "Noto'g'ri viloyat")
@@ -49,6 +48,15 @@ export const useRegisterHook = () => {
   const goBack = useGoBackHook();
 
   const getInputProps = (key: keyof yup.InferType<typeof validation>) => {
+    if (key.includes('phone') || key.includes('Number')) {
+      return {
+        value: state[key],
+        onFocus: () => setState({...state, [key]: '+998'}),
+        onChangeText: (value: string, unmasked: string) => {
+          setState({...state, [key]: value, [key + 'Unmasked']: unmasked});
+        },
+      };
+    }
     return {
       value: state[key],
       onChangeText: (value: string) => {
@@ -73,10 +81,12 @@ export const useRegisterHook = () => {
       let res = REQUESTS.auth.register({
         ...state,
         name: state.name + ' ' + state.surname,
+        phone: '+998' + state.phoneUnmasked,
+        parentNumber: '+998' + state.parentNumberUnmasked,
       });
       //@ts-ignore
       navigation.navigate(ROUTES.AUTH.VERIFY as never, {
-        phone: state.phone,
+        phone: state.phoneUnmasked,
         isRegister: true,
       });
     } catch (error) {}

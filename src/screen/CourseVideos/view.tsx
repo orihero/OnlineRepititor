@@ -15,8 +15,10 @@ const CourseVideosView = () => {
     onBuyPress,
     onRegisterPress,
     onDocumentPress,
+    getLatestOpenCourseIndex,
   } = useCourseVideoHook();
   let index = 0;
+  const latestVideo = getLatestOpenCourseIndex();
   return (
     <View style={{paddingTop: 40, flex: 1}}>
       <View style={styles.header}>
@@ -32,7 +34,10 @@ const CourseVideosView = () => {
               <TouchableOpacity
                 onPress={onCoursePress(e)}
                 key={i}
-                disabled={!e.public && (shouldBuy || shouldRegister)}
+                disabled={
+                  (!e.public && (shouldBuy || shouldRegister)) ||
+                  latestVideo < i
+                }
                 style={styles.card}>
                 <Image
                   source={{
@@ -71,6 +76,14 @@ const CourseVideosView = () => {
                     </Text>
                   </TouchableOpacity>
                 ) : null}
+                {latestVideo < i && (
+                  <View style={styles.overlay}>
+                    <Text style={styles.overlayText}>
+                      Ushbu darslikni ko'rish uchun oxirgi test sinovini
+                      muvaffaqqiyatli bajaring!
+                    </Text>
+                  </View>
+                )}
               </TouchableOpacity>
             );
           })}

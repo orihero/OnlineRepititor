@@ -51,20 +51,21 @@ const RegistrationScreen = () => {
             </View>
             <View style={{marginTop: 13}}>
               <Text style={{color: '#343936'}}>Telefon raqam</Text>
-              <TextInput
+              <MaskInput
                 placeholderTextColor="#343936"
                 style={styles.input}
+                {...PHONE_INPUT_PROPS}
                 {...getInputProps('phone')}
               />
             </View>
             <View style={{marginTop: 13}}>
               <Text style={{color: '#343936'}}>Ota onangiz telefon raqami</Text>
-              <MaskInput
+              {/* <MaskInput
                 placeholderTextColor="#343936"
                 style={styles.input}
                 {...PHONE_INPUT_PROPS}
                 {...getInputProps('parentNumber')}
-              />
+              /> */}
             </View>
             <View style={{marginTop: 13}}>
               <Text style={{color: '#343936'}}>

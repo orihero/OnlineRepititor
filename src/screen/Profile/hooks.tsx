@@ -8,7 +8,7 @@ export const useProfileHook = () => {
   const dispatch = useDispatch();
 
   const onRegisterPress = () => {
-    navigation.navigate(ROUTES.AUTH.LOGIN as never);
+    navigation.navigate(ROUTES.AUTH.REGISTER as never);
   };
 
   const onChangeProfileHooks = () => {

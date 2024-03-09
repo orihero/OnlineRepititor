@@ -184,6 +184,25 @@ export function LogoWhiteIcon() {
   );
 }
 
+export function AlertIcon() {
+  return (
+    <Svg
+      width={35}
+      height={35}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="white"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      >
+      <Circle cx={12} cy={12} r={10} />
+      <Path d="M12 8L12 12" />
+      <Path d="M12 16L12.01 16" />
+    </Svg>
+  );
+}
+
 export function NotificationIcon() {
   return (
     <Svg width={27} height={32} viewBox="0 0 27 32" fill="none">
@@ -283,7 +302,7 @@ export function ClockIcon() {
     <Svg
       xmlns="http://www.w3.org/2000/svg"
       width={25}
-      viewBox='0 0 51 41'
+      viewBox="0 0 51 41"
       height={20}>
       <Path
         d="M200 237.87c-9.914 0-18 8.085-18 18 0 9.914 8.086 18 18 18s18-8.086 18-18c0-9.915-8.086-18-18-18zm0 4c7.75 0 14 6.25 14 14s-6.25 14-14 14-14-6.25-14-14 6.25-14 14-14z"

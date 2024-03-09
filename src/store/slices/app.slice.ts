@@ -1,15 +1,16 @@
 import {PayloadAction, createSlice} from '@reduxjs/toolkit';
 import {RootState} from '../configureStore';
+import {IUser} from '../../api/types';
 
 export interface IAppSettings {
-  user: any;
+  user: IUser | undefined;
   favorites: {[key: string]: boolean};
   accessToken: string;
   refreshToken: string;
 }
 
 const initialState: IAppSettings = {
-  user: {},
+  user: undefined,
   favorites: {},
   accessToken: '',
   refreshToken: '',

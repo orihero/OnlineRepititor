@@ -15,14 +15,26 @@ import {COURSES} from '../../constants';
 
 export const HomeHooks = () => {
   const navigation = useNavigation();
-  const [state, setState] = useState({message: '', number: '', name: ''});
-
+  const user = useSelector(selectAppSettings);
+  const [state, setState] = useState({
+    message: '',
+    number: '',
+    name: '',
+  });
   const [search, setSearch] = useState('');
-
+  const purchasedCourses = COURSES.filter(e =>
+    user.user?.purchasedCourses.includes(e.id.toString()),
+  );
   const dispatch = useDispatch();
   const {favorites} = useSelector(selectAppSettings);
 
   const {accessToken} = useSelector(selectAppSettings);
+
+  useEffect(() => {
+    if (user.user) {
+      setState({...state, number: user.user.phone});
+    }
+  }, [user]);
 
   const onValueChange = (name: string) => (value: string) => {
     setState({...state, [name]: value});
@@ -32,11 +44,16 @@ export const HomeHooks = () => {
     navigation.navigate(ROUTES.HOME.CATEGORY as never);
   };
 
-  const onCoursePress = e => {
+  const onCoursePress = (e: any) => {
+    //@ts-ignore
     navigation.navigate(ROUTES.HOME.COURSE as never, {course: e});
   };
 
   const onApply = async () => {
+    if (!state.message || !state.name) {
+      Alert.alert('Diqqat', 'Iltimos barcha malumotlarni toldiring');
+      return;
+    }
     let message = `O'quvchi xabar jonatdi \n Ismi: ${state.name} \n Telefon raqami: ${state.number} \n Xabarnoma: ${state.message}`;
     try {
       axios.get(
@@ -79,6 +96,7 @@ export const HomeHooks = () => {
     : COURSES;
 
   const onIIVPress = () => {
+    //@ts-ignore
     navigation.navigate(ROUTES.HOME.IIV);
   };
 
@@ -94,5 +112,6 @@ export const HomeHooks = () => {
     search,
     onSearchChange: (e: string) => setSearch(e),
     onIIVPress,
+    purchasedCourses,
   };
 };

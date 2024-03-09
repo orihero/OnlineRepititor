@@ -345,7 +345,6 @@ export const styles = StyleSheet.create({
     marginTop: 15,
   },
   inforCard: {
-    width: 335,
     height: 107,
     marginTop: 8,
     gap: 16,

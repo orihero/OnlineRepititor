@@ -1,33 +1,21 @@
 import React from 'react';
 import {
+  ActivityIndicator,
   Image,
-  Linking,
   ScrollView,
   Text,
   TouchableOpacity,
   View,
 } from 'react-native';
-// import Video from 'react-native-video';
 import {ArrowIcon} from '../../assets/icons/icon';
 import {COURSES} from '../../constants';
 import {useBuyCourseHook} from './hooks';
 import {styles} from './style';
-import {SERVER_URL} from '../../api/requests';
-
-export const CLICK_SERVICE_ID = '31135';
-export const CLICK_MERCHANT_ID = '23305';
-const amount = '1000.00';
-// &transaction_param={transaction_param}&return_url={return_url}&card_type={card_type}
-
-//https://my.click.uz/services/pay?service_id={service_id}&merchant_id={merchant_id}&amount={amount}&transaction_param={transaction_param}&return_url={return_url}
 
 const BuyCourseScreen = () => {
-  const {goBack, onSelectCourse, selectedCourses, userPhone} =
+  const {goBack, onSelectCourse, selectedCourses, onBuyPress, loading} =
     useBuyCourseHook();
 
-  const return_url = `${SERVER_URL}/paymentSuccessfull?courses=${selectedCourses}`;
-  const CLICK_URL = `https://my.click.uz/services/pay?service_id=${CLICK_SERVICE_ID}&merchant_id=${CLICK_MERCHANT_ID}&amount=${amount}&transaction_param=${userPhone}`;
-  
   return (
     <View style={{flex: 1}}>
       <View style={styles.header}>
@@ -81,9 +69,17 @@ const BuyCourseScreen = () => {
         <Text>Ona tili: Muratova Zilola</Text>
         <Text>Matematika: Eldor Hamroyev</Text>
         <TouchableOpacity
-          onPress={() => Linking.openURL(CLICK_URL)}
-          style={styles.button}>
-          <Text style={styles.buttonText}>Sotib olish</Text>
+          disabled={loading || selectedCourses.length !== 2}
+          onPress={onBuyPress}
+          style={[
+            styles.button,
+            selectedCourses.length !== 2 && {backgroundColor: 'gray'},
+          ]}>
+          {loading ? (
+            <ActivityIndicator size={'large'} color={'white'} />
+          ) : (
+            <Text style={styles.buttonText}>Sotib olish</Text>
+          )}
         </TouchableOpacity>
       </View>
     </View>

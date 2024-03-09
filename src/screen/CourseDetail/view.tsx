@@ -2,6 +2,7 @@ import {useRoute} from '@react-navigation/native';
 import React, {useEffect, useRef} from 'react';
 import {Dimensions, StyleSheet, View} from 'react-native';
 import Orientation from 'react-native-orientation-locker';
+//@ts-ignore
 import Video from 'react-native-video-controls';
 import {useGoBackHook} from '../../common/hooks';
 

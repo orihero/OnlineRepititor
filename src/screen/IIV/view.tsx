@@ -1,5 +1,12 @@
 import React from 'react';
-import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
+import {
+  ActivityIndicator,
+  Image,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {ArrowIcon} from '../../assets/icons/icon';
 import {useGoBackHook} from '../../common/hooks';
 import {useIIVHook} from './hooks';
@@ -7,7 +14,7 @@ import {iivStyles} from './style';
 
 const IIVScreen = () => {
   const goBack = useGoBackHook();
-  const {courses, onCoursePress, onBuyPress} = useIIVHook();
+  const {courses, onCoursePress, onBuyPress, loading} = useIIVHook();
 
   return (
     <ScrollView
@@ -21,7 +28,18 @@ const IIVScreen = () => {
         <View style={iivStyles.courseHead}>
           <View>
             <Text style={iivStyles.title}>IIV litseyiga tayyorlov</Text>
-            <Text style={{marginVertical: 10}}>Kurs narxi: 1 500 000 UZS</Text>
+            <Text
+              style={{color: 'red', fontWeight: 'bold', marginVertical: 10}}>
+              Diqqat!
+            </Text>
+            <Text
+              style={{
+                color: 'black',
+                textDecorationLine: 'underline',
+              }}>
+              Ushbu kurs 6 oylik bo'lib kurs narxi 1 500 000 UZS va to'lovi bir
+              martalik. Kurs darsliklari:
+            </Text>
           </View>
         </View>
       </View>
@@ -98,7 +116,11 @@ const IIVScreen = () => {
         </View>
       </TouchableOpacity>
       <TouchableOpacity onPress={onBuyPress} style={iivStyles.button}>
-        <Text style={iivStyles.buttonText}>Sotib olish (1 500 000 UZS)</Text>
+        {loading ? (
+          <ActivityIndicator color={'white'} size={'large'} />
+        ) : (
+          <Text style={iivStyles.buttonText}>Sotib olish (1 500 000 UZS)</Text>
+        )}
       </TouchableOpacity>
     </ScrollView>
   );
